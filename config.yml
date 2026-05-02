@@ -1,0 +1,67 @@
+baseURL: "https://antoniovfranco.com/"
+languageCode: en
+title: "Antonio V. Franco"
+theme: hugo-website
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 100
+
+params:
+  author: Antonio V. Franco
+  description: "Antonio V. Franco's personal blog — thoughts on AI, engineering, and technology."
+  DateFormat: "January 2006"
+  defaultTheme: light
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowBreadCrumbs: false
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowShareButtons: false
+  ShowAllPagesInArchive: false
+  ShowToc: true
+  TocOpen: false
+  ShowWordCount: false
+  UseHugoToc: true
+  comments: false
+  math: false
+  disableScrollToTop: false
+  disableAnchoredHeadings: false
+  disableSpecial1stPost: true
+  # Profile mode disabled — using custom homepage archive
+  profileMode:
+    enabled: false
+  socialIcons:
+    - name: GitHub
+      url: "https://github.com/AntonioVFranco"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/antoniovfranco/"
+  assets:
+    disableScrollBarStyle: true
+  cover:
+    hiddenInList: false
+    hiddenInSingle: true
+  label:
+    text: "Antonio V. Franco"
+
+menu:
+  main:
+    - name: Blog
+      url: /
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: monokai
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
