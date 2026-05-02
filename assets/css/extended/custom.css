@@ -3,6 +3,19 @@
    Inspired by akitaonrails.com/en/
    ============================================================ */
 
+/* Hide scroll-to-top button by default — only show via JS when scrolled */
+.top-link {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Site logo / title */
+.logo a {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
 .archive-wrapper {
   max-width: var(--main-width);
   margin: 0 auto;
