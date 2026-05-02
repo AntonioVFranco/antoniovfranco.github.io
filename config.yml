@@ -1,7 +1,7 @@
 baseURL: "https://antoniovfranco.com/"
 languageCode: en
 title: "Antonio V. Franco"
-theme: hugo-website
+theme: [hugo-website, PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
