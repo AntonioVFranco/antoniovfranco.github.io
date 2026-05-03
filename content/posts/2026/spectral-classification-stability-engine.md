@@ -5,7 +5,7 @@ draft: false
 tags: ["ai", "machine-learning", "astronomy", "llm", "rag"]
 ---
 
-![Figure 1](/static/images/spectral-classification/img-01.png)
+![Figure 1](/images/spectral-classification/img-01.png)
 
 *(Antonio V. Franco)*
 
@@ -30,7 +30,7 @@ In formal terms, given an object with features F = {f1, f2, …, fn}, an LLM cla
 
 In practice, this invariance is violated. And the scale is alarming: SDSS DR18 contains roughly 6 million spectra. Even with a permutation sensitivity rate of only 2%, that would mean about 120,000 objects with unstable classifications. For a survey that cost hundreds of millions of dollars and serves as the basis for thousands of scientific papers, this invisible uncertainty is unacceptable. SCSE was designed to make it visible, quantify it, and mitigate it.
 
-![Figure 2](/static/images/spectral-classification/img-02.png)
+![Figure 2](/images/spectral-classification/img-02.png)
 
 *(Antonio V. Franco)*
 
@@ -86,7 +86,7 @@ The decision to use textual descriptions instead of raw numerical values reflect
 
 This results in 10 features per object, with N! = 10! = 3,628,800 possible permutations. Enumerating all of them would be impossible, so I selected 30 strategic permutations: identity (natural order), reverse order, groupings (magnitudes first, colors first, redshift first), and random permutations. The grouping permutations are particularly interesting because they simulate how different astronomical pipelines might organize features (some pipelines list magnitudes first, others color indices, others start with redshift). With 150 objects × 30 permutations = 4,500 inference calls, I obtained statistical coverage while keeping computational cost feasible.
 
-![Figure 3](/static/images/spectral-classification/img-03.png)
+![Figure 3](/images/spectral-classification/img-03.png)
 
 *(Antonio V. Franco)*
 
@@ -178,7 +178,7 @@ Spectral clustering is the central method of Stable-RAG, and its precise impleme
 
 The eigengap method for determining K is what makes clustering adaptive per object. Ambiguous objects naturally generate more clusters; objects where the model is confident generate fewer. This is exactly what we want: K per object is an intrinsic ambiguity index. In the astronomical context, K=1 means the model classifies the object consistently regardless of feature order; K=2 means the model has two competing classification modes; K>=3 indicates severe ambiguity.
 
-![Figure 4](/static/images/spectral-classification/img-04.png)
+![Figure 4](/images/spectral-classification/img-04.png)
 
 *(Antonio V. Franco)*
 
@@ -209,14 +209,14 @@ After approximately 90 minutes of inference on the A40, the Part 1 results were 
 
 The breakdown by class was particularly informative:
 
-![Figure 5](/static/images/spectral-classification/img-05.png)
+![Figure 5](/images/spectral-classification/img-05.png)
 
 
 These results confirm the central intuition: objects near classification boundaries are more sensitive to permutation. Quasars are the most stable because their features (high redshift, broad emission lines) are highly diagnostic and unambiguous. Stars are the most unstable because their spectra can overlap with those of compact galaxies in certain redshift ranges. The STAR class is the most ambiguous because it includes objects with a wide range of properties (from main-sequence stars to white dwarfs and subdwarfs) that can be confused with low-redshift galaxies or low-luminosity quasars.
 
 One notable result: all 150 objects showed exactly K=2 clusters, suggesting that the model operates in binary reasoning modes (”classify as X” versus “classify as Y”). This is consistent with Stable-RAG’s interpretation that spectral clustering reveals competing reasoning trajectories. The universality of K=2 is surprising and suggests that for the three-class classification task, the model typically hesitates between two alternatives (not three). In other words, the ambiguity is binary: “is it STAR or GALAXY?”, “is it GALAXY or QSO?” (rarely “is it STAR, GALAXY, or QSO?” simultaneously).
 
-![Figure 6](/static/images/spectral-classification/img-06.png)
+![Figure 6](/images/spectral-classification/img-06.png)
 
 *(Antonio V. Franco)*
 
@@ -229,7 +229,7 @@ Science without verification is just computation. I implemented two sets of qual
 ### Pre-Alignment Verification (Part 1)
 
 
-![Figure 7](/static/images/spectral-classification/img-07.png)
+![Figure 7](/images/spectral-classification/img-07.png)
 
 
 The physical plausibility check found 5 issues: objects classified as QSO with implausibly low redshift (z < 0.01), a galaxy with negative redshift (z = -0.000482), and QSOs with nearly zero redshift (z = 0.0001). This is valuable (the model could have low PSS while producing wrong but stable classifications). Without physical plausibility checks, we would have no way to distinguish correct stability from incorrect stability. A QSO at z=0.0001 is physically impossible (quasars are at cosmological distances, typically with redshift > 0.1), so the “QSO” classification for that object is wrong regardless of how stable it is.
@@ -238,7 +238,7 @@ The classification agreement check revealed overall accuracy of 63.3%, with perf
 
 Permutation sensitivity passed the check: average PSS of 0.0916, maximum PSS of 0.633, 54% of objects affected. The sensitivity is real, measurable, and non-trivial.
 
-![Figure 8](/static/images/spectral-classification/img-08.png)
+![Figure 8](/images/spectral-classification/img-08.png)
 
 *(Antonio V. Franco)*
 
@@ -282,7 +282,7 @@ After DPO training, I reevaluated the 99 objects with 30 permutations each on th
 ### Before vs. After Alignment
 
 
-![Figure 9](/static/images/spectral-classification/img-09.png)
+![Figure 9](/images/spectral-classification/img-09.png)
 
 
 The PSS reduction from 0.139 to 0.073 is substantial (a 47% reduction in permutation sensitivity). The PSS dropped consistently for objects of all categories: objects with high PSS before alignment showed proportionally larger reductions, while stable objects remained stable.
@@ -303,7 +303,7 @@ Post-alignment verification showed mixed results:
 - Cluster reduction: Passed (maintained K=2)
 
 
-![Figure 10](/static/images/spectral-classification/img-10.png)
+![Figure 10](/images/spectral-classification/img-10.png)
 
 *(Antonio V. Franco)*
 
@@ -313,21 +313,21 @@ Post-alignment verification showed mixed results:
 
 The t-SNE visualization of hidden states clearly shows the two clusters for each object (one cluster corresponding to one classification trajectory and the other to the alternative trajectory). The visual separation confirms that spectral clustering is not finding numerical artifacts, but rather genuinely distinct reasoning modes in the model’s representation space. The t-SNE projection reduces the 3584 dimensions of the hidden states to 2 dimensions while preserving neighborhood structure, and the clear separation between clusters (visually validated) gives confidence that the clusters are real.
 
-![Figure 11](/static/images/spectral-classification/img-11.png)
+![Figure 11](/images/spectral-classification/img-11.png)
 
 *(Antonio V. Franco)*
 
 
 The Laplacian eigenvalue spectra show the characteristic eigengap between the second and third eigenvalues, confirming that K=2 is the natural structure of the data (not an artifact of the clustering algorithm). The first eigenvalue is zero (as expected for the Laplacian), the second eigenvalue is small (indicating strong connectivity within each cluster), and there is a clear jump to the third eigenvalue (indicating that two clusters capture the main structure of the data).
 
-![Figure 12](/static/images/spectral-classification/img-12.png)
+![Figure 12](/images/spectral-classification/img-12.png)
 
 *(Antonio V. Franco)*
 
 
 The per-object results panel combines SDSS false-color images with classification results, visually showing which objects are stable and which are sensitive. Stable objects (PSS=0) show a consistent color across all permutations; unstable ones show variations that correspond to different classification trajectories.
 
-![Figure 13](/static/images/spectral-classification/img-13.png)
+![Figure 13](/images/spectral-classification/img-13.png)
 
 *(Antonio V. Franco)*
 
@@ -359,19 +359,19 @@ For reference, here are the infrastructure details and computation times. I docu
 ### A40 (Part 1: Inference)
 
 
-![Figure 14](/static/images/spectral-classification/img-14.png)
+![Figure 14](/images/spectral-classification/img-14.png)
 
 
 ### A100 (Part 2: DPO)
 
 
-![Figure 15](/static/images/spectral-classification/img-15.png)
+![Figure 15](/images/spectral-classification/img-15.png)
 
 
 ### Computation Times
 
 
-![Figure 16](/static/images/spectral-classification/img-16.png)
+![Figure 16](/images/spectral-classification/img-16.png)
 
 
 The total compute cost was under $2.00 (less than a coffee in many cities). This demonstrates that cutting-edge LLM research does not need to be prohibitively expensive, as long as infrastructure is chosen wisely and resources are used efficiently.
