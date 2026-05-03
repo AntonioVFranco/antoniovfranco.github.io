@@ -387,7 +387,7 @@ And alignment via DPO works: it reduced permutation sensitivity by 47% without s
 
 SCSE is, in my view, a proof of concept that the intersection of NLP methods and scientific domains can reveal problems that neither field would notice in isolation. The NLP community doesn’t think about astronomical pipelines; the astronomical community doesn’t think about LLM hidden states. When spectral clustering meets the electromagnetic spectrum, both are enriched. The pun turned into research (and the research produced results).
 
-*If you’re building AI systems where reliability and robustness matter, you know that insights like these shouldn’t stay in the lab. I help growing technical teams move from ad-hoc LLM workflows to production-grade RAG systems (managed, monitored, and continuously improved). If bringing this same level of analytical rigor to your own knowledge infrastructure sounds valuable, **[you can explore my managed RAG service here](https://antoniovfranco.com/production-rag-knowledge-system/)**.*
+*If you’re building AI systems where reliability and robustness matter, you know that insights like these shouldn’t stay in the lab. I help growing technical teams move from ad-hoc LLM workflows to production-grade RAG systems (managed, monitored, and continuously improved). If bringing this same level of analytical rigor to your own knowledge infrastructure sounds valuable, **[you can explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*
 
 *References:*
 - Zhang, Q., Zhang, H., Pang, L., Zheng, H., & Zheng, Z. (2026). Stable-RAG: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation. arXiv:2601.02993v4.
