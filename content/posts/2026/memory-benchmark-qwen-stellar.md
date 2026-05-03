@@ -147,7 +147,7 @@ A common concern with sophisticated memory mechanisms is that they will slow dow
 
 To ground my results in astrophysical reality, it is worth placing them against the Hertzsprung-Russell (HR) diagram, the foundational chart of stellar astronomy. The HR diagram plots intrinsic brightness against surface temperature and reveals the physical basis for stellar classification. Main-sequence stars, red giants, white dwarfs, and other evolutionary stages each occupy distinct branches.
 
-![Hertzsprung-Russell diagram](/images/memory-benchmark/297f0fa7-f672-48ab-a4ef-702a6156944c_1280x1280.png)
+<img width="1781" height="1330" alt="hr_diagram" src="https://github.com/user-attachments/assets/9094e844-ba12-4255-be6a-eaab3c20a7e3" />
 
 *(Antonio V. Franco)*
 
