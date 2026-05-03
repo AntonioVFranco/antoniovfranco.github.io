@@ -97,5 +97,5 @@ For teams that already have a working RAG pipeline, the good news is that Stable
 
 The paper is available on arXiv (2601.02993v4) and the code on GitHub (github.com/zqc1023/Stable-RAG).
 
-*If you’re building AI systems where reliability and robustness matter, you know that insights like these shouldn’t stay in the lab. I help growing technical teams move from ad-hoc LLM workflows to production-grade RAG systems (managed, monitored, and continuously improved). If bringing this same level of analytical rigor to your own knowledge infrastructure sounds valuable, **[you can explore my managed RAG service here](https://antoniovfranco.com/production-rag-knowledge-system/)**.*
+*If you’re building AI systems where reliability and robustness matter, you know that insights like these shouldn’t stay in the lab. I help growing technical teams move from ad-hoc LLM workflows to production-grade RAG systems (managed, monitored, and continuously improved). If bringing this same level of analytical rigor to your own knowledge infrastructure sounds valuable, **[you can explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*
 EOF
