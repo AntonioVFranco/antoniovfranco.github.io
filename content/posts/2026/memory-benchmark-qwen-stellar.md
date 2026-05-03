@@ -1,6 +1,6 @@
 ---
 title: "Can Memory Make an AI Worse? My Benchmark with Qwen3.5-9B and Stellar Classification"
-date: 2026-05-03T12:00:00-03:00
+date: 2026-05-03T00:00:00-03:00
 draft: false
 tags: ["AI Memory", "ReasoningBank", "LLM Benchmark", "Stellar Classification", "Qwen3.5"]
 ---
