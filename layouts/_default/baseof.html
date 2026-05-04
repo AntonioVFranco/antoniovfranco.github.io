@@ -24,8 +24,7 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
-    {{- /* Theme init + toggle — single script, no conflicts */}}
-    {{- if (not site.Params.disableThemeToggle) }}
+    {{- /* Theme init + toggle — single script, no conflicts with theme footer */}}
     <script>
     (function(){
         var html = document.documentElement;
@@ -56,7 +55,6 @@
         });
     })();
     </script>
-    {{- end }}
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}

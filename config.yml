@@ -34,7 +34,7 @@ params:
     - "AI cost optimization"
   DateFormat: "January 2006"
   defaultTheme: light
-  disableThemeToggle: false
+  disableThemeToggle: true
   ShowReadingTime: true
   ShowBreadCrumbs: false
   ShowPostNavLinks: true
