@@ -24,6 +24,10 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
+    {{- /* Immediate theme restore from localStorage before paint */}}
+    <script>
+    (function(){var t=localStorage.getItem("pref-theme");if(t){document.documentElement.dataset.theme=t;if(t==="dark"){document.body.classList.add("dark");}else{document.body.classList.remove("dark");}}}());
+    </script>
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}

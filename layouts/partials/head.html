@@ -141,35 +141,7 @@
     {{- end }}
 </noscript>
 
-{{- /* Theme toggle JavaScript */}}
-{{- if not site.Params.disableThemeToggle }}
-<script>
-    (function() {
-        const html = document.documentElement;
-        // On page load: read from localStorage
-        const stored = localStorage.getItem("pref-theme");
-        if (stored === "dark") {
-            html.dataset.theme = "dark";
-        } else if (stored === "light") {
-            html.dataset.theme = "light";
-        }
-        // On toggle click
-        const toggle = document.getElementById("theme-toggle");
-        if (toggle) {
-            toggle.addEventListener("click", function() {
-                const current = html.dataset.theme;
-                if (current === "dark") {
-                    html.dataset.theme = "light";
-                    localStorage.setItem("pref-theme", "light");
-                } else {
-                    html.dataset.theme = "dark";
-                    localStorage.setItem("pref-theme", "dark");
-                }
-            });
-        }
-    })();
-</script>
-{{- end }}
+{{- /* End of head */}}
 
 {{- partial "templates/opengraph.html" . }}
 {{- partial "templates/twitter_cards.html" . }}

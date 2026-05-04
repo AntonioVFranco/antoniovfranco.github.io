@@ -3,25 +3,7 @@
    Inspired by akitaonrails.com/en/
    ============================================================ */
 
-/* Theme toggle: hide moon by default (default theme is light, before JS runs).
-   The [data-theme] rules override this for each state. */
-.theme-toggle .moon {
-  display: none;
-}
-
-[data-theme="dark"] .moon {
-  display: inline !important;
-}
-
-[data-theme="dark"] .sun {
-  display: none !important;
-}
-
-[data-theme="light"] .moon {
-  display: none !important;
-}
-
-/* Hide scroll-to-top button by default — only show via JS when scrolled */
+/* Site logo / title */
 .top-link {
   visibility: hidden !important;
   opacity: 0 !important;
