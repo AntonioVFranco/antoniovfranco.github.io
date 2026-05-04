@@ -38,7 +38,10 @@
         document.addEventListener("DOMContentLoaded", function(){
             var btn = document.getElementById("theme-toggle");
             if (btn) {
-                btn.addEventListener("click", function(){
+                // Replace button to remove any previously attached listeners from theme partials
+                var newBtn = btn.cloneNode(true);
+                btn.parentNode.replaceChild(newBtn, btn);
+                newBtn.addEventListener("click", function(){
                     if (html.dataset.theme === "dark") {
                         html.dataset.theme = "light";
                         document.body.classList.remove("dark");
