@@ -2,7 +2,49 @@
 title: "Stable-RAG Benchmark: Your RAG System Lies Depending on Document Order."
 date: 2026-04-27T12:00:00-03:00
 draft: false
+description: "Benchmark comparing conventional RAG vs Stable-RAG reveals that reordering retrieved documents causes hallucination. Stable-RAG reduces Permutation Sensitivity Rate by 37.8% using spectral clustering and DPO alignment on Qwen3-4B."
 tags: ["RAG", "LLM", "AI Engineering", "Hallucination", "Stable-RAG"]
+keywords:
+  - "Stable-RAG benchmark"
+  - "RAG permutation sensitivity"
+  - "retrieval augmented generation hallucination"
+  - "PSR metric RAG"
+  - "document order LLM hallucination"
+  - "spectral clustering hidden states LLM"
+  - "DPO training RAG systems"
+  - "retrieval-permutation-induced hallucinations"
+  - "RAG system robustness"
+  - "LLM reasoning stability"
+  - "hybrid search reranking limitations"
+  - "BM25 semantic search RAG"
+  - "cross-encoder reranking RAG"
+  - "Qwen3-4B benchmark"
+  - "NaturalQuestions dataset RAG"
+  - "Substring Exact Match RAG evaluation"
+  - "LLM hallucination prevention"
+  - "preference data construction DPO"
+  - "LoRA fine-tuning RAG"
+  - "retrieval pipeline robustness"
+  - "how to fix RAG hallucination from document order"
+  - "does document order affect RAG answers"
+  - "Stable-RAG vs conventional RAG comparison"
+  - "spectral clustering for LLM reasoning modes"
+  - "permutation sensitivity rate definition"
+  - "how to measure RAG system stability"
+  - "best practices for production RAG pipelines"
+  - "when to use DPO for RAG alignment"
+  - "hidden state clustering for LLM evaluation"
+  - "RAG system reliability best practices"
+  - "how to reduce hallucination in retrieval augmented generation"
+  - "is reranking enough for RAG stability"
+  - "Stable-RAG implementation guide"
+  - "LLM permutation sensitivity research"
+  - "RAG benchmark methodology"
+  - "how Stable-RAG reduces hallucination"
+  - "DPO training for retrieval systems"
+  - "RAG evaluation metrics SubEM F1 PSR"
+  - "why RAG gives different answers with same documents"
+  - "Stable-RAG Zhang et al 2026 results"
 ---
 
 ![Stable-RAG Benchmark cover](https://substack-post-media.s3.amazonaws.com/public/images/0203cdf1-aa26-446c-86df-9853b6c3e5c2_1920x1080.png)
@@ -97,5 +139,4 @@ For teams that already have a working RAG pipeline, the good news is that Stable
 
 The paper is available on arXiv (2601.02993v4) and the code on GitHub (github.com/zqc1023/Stable-RAG).
 
-*If you’re building AI systems where reliability and robustness matter, you know that insights like these shouldn’t stay in the lab. I help growing technical teams move from ad-hoc LLM workflows to production-grade RAG systems (managed, monitored, and continuously improved). If bringing this same level of analytical rigor to your own knowledge infrastructure sounds valuable, **[you can explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*
-EOF
+*If you're building AI systems where accuracy, reliability, and data sovereignty matter, you shouldn't have to build and maintain the infrastructure yourself. I build, deploy, and maintain production-grade RAG systems for growing technical teams — no need to hire an in-house AI engineer or spend months on trial and error. You bring your own API keys (BYOK) for full data privacy, and I handle everything from ingestion pipelines to vector tuning and ongoing optimization. **[Explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*

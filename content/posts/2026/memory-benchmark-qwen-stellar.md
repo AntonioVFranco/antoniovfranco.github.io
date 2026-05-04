@@ -2,9 +2,50 @@
 title: "Can Memory Make an AI Worse? My Benchmark with Qwen3.5-9B and Stellar Classification"
 date: 2026-05-03T00:00:00-03:00
 draft: false
+description: "Benchmark reveals naive ReasoningBank memory reduces accuracy by 22pp on SDSS stellar classification. RB-EC with consolidation, pruning, and class-balanced retrieval restores baseline performance."
 tags: ["AI Memory", "ReasoningBank", "LLM Benchmark", "Stellar Classification", "Qwen3.5"]
+keywords:
+  - "AI memory benchmark results"
+  - "ReasoningBank memory degradation"
+  - "RB-EC enhanced curation memory"
+  - "LLM memory makes performance worse"
+  - "Qwen3.5-9B stellar classification benchmark"
+  - "SDSS photometric classification AI"
+  - "class-balanced retrieval debiasing"
+  - "memory consolidation pruning AI agents"
+  - "embedding improvement mechanism EIM"
+  - "retrieval-adaptive task typing RATT"
+  - "consolidation via embedding similarity CES"
+  - "dual-condition cards DCC memory"
+  - "pruning by significance trajectory PST"
+  - "confidence-aware fallback memory"
+  - "Hertzsprung-Russell diagram AI"
+  - "naive memory vs curated memory"
+  - "memory-augmented AI accuracy drop"
+  - "class imbalance in AI memory banks"
+  - "QSO bias in memory retrieval"
+  - "all-MiniLM-L6-v2 memory embeddings"
+  - "does AI memory always improve performance"
+  - "how to prevent memory bias in AI agents"
+  - "ReasoningBank vs zero-shot performance"
+  - "why naive memory hurts AI accuracy"
+  - "how to build curatorial memory systems"
+  - "class-balanced retrieval for LLM agents"
+  - "memory consolidation techniques for AI"
+  - "when does memory help LLMs"
+  - "memory-augmented AI benchmark methodology"
+  - "how to prune AI memory banks"
+  - "Qwen3.5-9B with ReasoningBank results"
+  - "stellar classification with AI memory"
+  - "memory retrieval latency comparison"
+  - "debiasing AI memory retrieval"
+  - "embedding similarity clustering memory"
+  - "how to measure memory bank quality"
+  - "adaptive k retrieval for memory systems"
+  - "confident fallback when memory is unreliable"
+  - "memory self-corruption in AI agents"
+  - "ReasoningBank enhanced curation architecture"
 ---
-
 ![Stellar classification memory benchmark](/images/memory-benchmark/ccd69768-9d14-4d7b-b881-716328294315_1920x1080.png)
 
 *(Antonio V. Franco)*
@@ -175,4 +216,4 @@ My counterintuitive result (a 22-percentage-point drop from naive memory) is not
 
 The next step is to test these principles in richer domains, with more classes, higher-dimensional features, and greater task diversity. If RB-EC can match a strong baseline in an adversarial classification setting, what can it achieve in a setting where the classes are truly separable and strategies do not compete? That question will drive my next investigation.
 
-*If you're building AI systems where reliability and robustness matter, you know that insights like these shouldn't stay in the lab. I help growing technical teams move from ad-hoc LLM workflows to production-grade RAG systems (managed, monitored, and continuously improved). If bringing this same level of analytical rigor to your own knowledge infrastructure sounds valuable, **[you can explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*
+*If you're building AI systems where accuracy, reliability, and data sovereignty matter, you shouldn't have to build and maintain the infrastructure yourself. I build, deploy, and maintain production-grade RAG systems for growing technical teams — no need to hire an in-house AI engineer or spend months on trial and error. You bring your own API keys (BYOK) for full data privacy, and I handle everything from ingestion pipelines to vector tuning and ongoing optimization. **[Explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*

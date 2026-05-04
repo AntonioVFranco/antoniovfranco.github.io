@@ -2,9 +2,50 @@
 title: "Spectral Classification Stability Engine: From Idea to Results"
 date: 2026-04-29T12:00:00-03:00
 draft: false
-tags: ["ai", "machine-learning", "astronomy", "llm", "rag"]
+description: "Building SCSE to apply Stable-RAG's spectral clustering to astronomical SDSS classification. Documents 16 version iterations across Kaggle, RunPod A40, and A100, achieving 47% PSS reduction via DPO."
+tags: ["AI", "Machine Learning", "Astronomy", "LLM", "RAG"]
+keywords:
+  - "Spectral Classification Stability Engine"
+  - "SCSE astronomical classification LLM"
+  - "SDSS stellar classification AI"
+  - "Stable-RAG astronomy application"
+  - "permutation sensitivity astronomical data"
+  - "spectral clustering hidden states astronomy"
+  - "Qwen3.5-9B astronomical classification"
+  - "DPO training for classification stability"
+  - "PSS permutation sensitivity score"
+  - "LLM hidden state analysis"
+  - "RunPod A100 GPU LLM benchmark"
+  - "eigengap spectral clustering K-means"
+  - "LoRA DPO memory optimization"
+  - "SDSS DR18 classification pipeline"
+  - "quasar galaxy star classification LLM"
+  - "astronomical spectral features NLP"
+  - "two-phase DPO training VRAM"
+  - "gradient checkpointing LoRA"
+  - "Qwen reasoning model disable thinking"
+  - "LLM science infrastructure challenges"
+  - "how to apply Stable-RAG to astronomy"
+  - "can LLMs classify astronomical objects"
+  - "spectral clustering vs spectral features astronomy"
+  - "how to build SCSE for SDSS classification"
+  - "permutation sensitivity in astronomical classification"
+  - "Qwen3.5-9B for scientific classification"
+  - "how to reduce memory usage in DPO training"
+  - "RunPod vs Kaggle for LLM experiments"
+  - "DPO with LoRA for classification alignment"
+  - "how spectral clustering reveals reasoning modes"
+  - "SDSS object classification with language models"
+  - "Laplacian eigengap method for clustering"
+  - "t-SNE visualization of LLM hidden states"
+  - "why LLM classification changes with feature order"
+  - "how to run Qwen models on GPU"
+  - "CUDA compatibility Qwen models"
+  - "two-phase DPO to save VRAM"
+  - "disable thinking mode Qwen3.5"
+  - "astronomical classification stability benchmark"
+  - "Stable-RAG cross-domain application"
 ---
-
 ![Figure 1](/images/spectral-classification/img-01.png)
 
 *(Antonio V. Franco)*
@@ -387,8 +428,8 @@ And alignment via DPO works: it reduced permutation sensitivity by 47% without s
 
 SCSE is, in my view, a proof of concept that the intersection of NLP methods and scientific domains can reveal problems that neither field would notice in isolation. The NLP community doesn’t think about astronomical pipelines; the astronomical community doesn’t think about LLM hidden states. When spectral clustering meets the electromagnetic spectrum, both are enriched. The pun turned into research (and the research produced results).
 
-*If you’re building AI systems where reliability and robustness matter, you know that insights like these shouldn’t stay in the lab. I help growing technical teams move from ad-hoc LLM workflows to production-grade RAG systems (managed, monitored, and continuously improved). If bringing this same level of analytical rigor to your own knowledge infrastructure sounds valuable, **[you can explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*
-
 *References:*
 - Zhang, Q., Zhang, H., Pang, L., Zheng, H., & Zheng, Z. (2026). Stable-RAG: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation. arXiv:2601.02993v4.
 - Ahumada, R., et al. (2020). The 17th Data Release of the Sloan Digital Sky Surveys.
+
+*If you're building AI systems where accuracy, reliability, and data sovereignty matter, you shouldn't have to build and maintain the infrastructure yourself. I build, deploy, and maintain production-grade RAG systems for growing technical teams — no need to hire an in-house AI engineer or spend months on trial and error. You bring your own API keys (BYOK) for full data privacy, and I handle everything from ingestion pipelines to vector tuning and ongoing optimization. **[Explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*

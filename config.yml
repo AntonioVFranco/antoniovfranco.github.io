@@ -8,9 +8,30 @@ enableRobotsTXT: true
 pagination:
   pagerSize: 100
 
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+  filename: sitemap.xml
+
 params:
+  env: production
   author: Antonio V. Franco
   description: "Antonio V. Franco's personal blog — thoughts on AI, engineering, and technology."
+  keywords:
+    - "AI Engineering"
+    - "RAG systems"
+    - "LLM benchmarks"
+    - "open source AI"
+    - "retrieval augmented generation"
+    - "AI research"
+    - "machine learning"
+    - "data sovereignty"
+    - "production AI systems"
+    - "AI agents"
+    - "LLM fine-tuning"
+    - "GPU infrastructure"
+    - "RunPod"
+    - "AI cost optimization"
   DateFormat: "January 2006"
   defaultTheme: light
   disableThemeToggle: false
@@ -42,8 +63,20 @@ params:
   cover:
     hiddenInList: false
     hiddenInSingle: true
+  schema:
+    publisherType: "Person"
+    sameAs:
+      - "https://github.com/AntonioVFranco"
+      - "https://www.linkedin.com/in/antoniovfranco/"
+  analytics:
+    google:
+      SiteVerificationTag: ""
   label:
     text: "Antonio V. Franco"
+
+services:
+  googleAnalytics:
+    ID: ""
 
 menu:
   main:
