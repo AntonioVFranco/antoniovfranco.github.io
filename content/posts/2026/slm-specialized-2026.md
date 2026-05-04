@@ -46,7 +46,7 @@ keywords:
   - "how to build AI with SLM instead of LLM"
   - "cost savings of specialized models vs generalist LLMs"
 ---
-<img width="1920" height="1080" alt="jklhn4563l" src="https://github.com/user-attachments/assets/f035d28b-4802-4892-9ba4-443b1b02cc1b" />
+<img alt="jklhn4563l" src="https://github.com/user-attachments/assets/f035d28b-4802-4892-9ba4-443b1b02cc1b" />
 
 
 *(Antonio V. Franco)*
