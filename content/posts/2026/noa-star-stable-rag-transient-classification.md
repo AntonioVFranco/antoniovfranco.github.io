@@ -1,5 +1,5 @@
 ---
-title: "When Document Order Changes the Verdict: What the NOA-Star Simulation Reveals About Transient Classification"
+title: "What the NOA-Star Simulation Reveals About Transient Classification"
 date: 2026-05-07T12:00:00-03:00
 draft: false
 description: "The NOA-Star simulation of Stable-RAG on astronomical transient classification achieves 98.9% accuracy across 90 events, but the single error and the low-stability events reveal more than the successes. Stability scores expose where reasoning is fragile, even when the answer is correct."
