@@ -5,13 +5,7 @@ url: /about/
 summary: about
 ---
 
-# Hi, I'm Antonio V. Franco
-
-I'm an AI Engineer based in Sao Paulo, Brazil. I write about my experiments and research with artificial intelligence technologies, as well as honest opinions on the real applicability of new technologies for the workflow of your production systems or research models (here, you will find sincere content, free from sponsorships).
-
-## Connect
-
-- **Hire me to develop a RAG system for your business**: [Check it out here.](https://antonio.getzendo.io/service/rag-knowledge/subscription)
+I am Antonio V. Franco, a Fuvest entrance exam student and a Solo Researcher in AI focusing on RAG, LLMs and SLMs, agents, astronomy, astrophysics, machine learning in general, mathematics, and quantum computing and mechanics. If you have any questions about my articles or if you would like to get in touch with me for any other purpose, I will be happy to talk via email: contact@antoniovfranco.com
 
 ---
 
