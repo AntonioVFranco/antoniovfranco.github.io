@@ -433,3 +433,7 @@ SCSE is, in my view, a proof of concept that the intersection of NLP methods and
 - Ahumada, R., et al. (2020). The 17th Data Release of the Sloan Digital Sky Surveys.
 
 *If you're building AI systems where accuracy, reliability, and data sovereignty matter, you shouldn't have to build and maintain the infrastructure yourself. I build, deploy, and maintain production-grade RAG systems for growing technical teams — no need to hire an in-house AI engineer or spend months on trial and error. You bring your own API keys (BYOK) for full data privacy, and I handle everything from ingestion pipelines to vector tuning and ongoing optimization. **[Explore my managed RAG service here](https://antonio.getzendo.io/service/rag-knowledge/subscription)**.*
+
+---
+
+<p style="text-align: center; font-style: italic; margin-top: 2em;">I am Antonio V. Franco, a Fuvest entrance exam student and a Solo Researcher in AI focusing on RAG, LLMs and SLMs, agents, astronomy, astrophysics, machine learning in general, mathematics, and quantum computing and mechanics. If you have any questions about my articles or if you would like to get in touch with me for any other purpose, I will be happy to talk via email: contact@antoniovfranco.com</p>
