@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Open Source LLMs on Antonio V. Franco</title>
+    <link>https://antoniovfranco.com/tags/open-source-llms/</link>
+    <description>Recent content in Open Source LLMs on Antonio V. Franco</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Apr 2026 12:00:00 -0300</lastBuildDate>
+    <atom:link href="https://antoniovfranco.com/tags/open-source-llms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG with Open-Source LLMs: Why You&#39;re Paying Too Much to Hand Your Data to Someone Else</title>
+      <link>https://antoniovfranco.com/posts/2026/rag-open-source-llms/</link>
+      <pubDate>Sun, 26 Apr 2026 12:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/rag-open-source-llms/</guid>
+      <description>Cost analysis and data sovereignty comparison of open-source vs commercial LLMs for RAG. Self-hosted Qwen3.5, DeepSeek, and GLM models match commercial quality at 10x lower cost with full data control.</description>
+    </item>
+  </channel>
+</rss>

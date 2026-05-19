@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Antonio V. Franco</title>
+    <link>https://antoniovfranco.com/</link>
+    <description>Recent content on Antonio V. Franco</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 13 May 2026 12:00:00 -0300</lastBuildDate>
+    <atom:link href="https://antoniovfranco.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FUVEST and ML: If You Are Poor, Do Not Put Your Child in a Private School</title>
+      <link>https://antoniovfranco.com/posts/2026/fuvest-ml-public-school-advantage/</link>
+      <pubDate>Wed, 13 May 2026 12:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/fuvest-ml-public-school-advantage/</guid>
+      <description>Machine learning analysis shows public school students now represent 59% of elite university admissions in Brazil. Free educational resources have broken the private school monopoly on exam preparation.</description>
+    </item>
+    <item>
+      <title>When Document Order Changes the Verdict: What the NOA-Star Simulation Reveals About Transient Classification</title>
+      <link>https://antoniovfranco.com/posts/2026/noa-star-stable-rag-transient-classification/</link>
+      <pubDate>Thu, 07 May 2026 12:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/noa-star-stable-rag-transient-classification/</guid>
+      <description>The NOA-Star simulation of Stable-RAG on astronomical transient classification achieves 98.9% accuracy across 90 events, but the single error and the low-stability events reveal more than the successes. Stability scores expose where reasoning is fragile, even when the answer is correct.</description>
+    </item>
+    <item>
+      <title>Why Specialized SLMs Are the Standard From 2026 Onward</title>
+      <link>https://antoniovfranco.com/posts/2026/slm-specialized-2026/</link>
+      <pubDate>Mon, 04 May 2026 12:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/slm-specialized-2026/</guid>
+      <description>Specialized Small Language Models (SLMs) are replacing giant commercial LLMs as the standard for enterprise AI in 2026. Open-source SLMs deliver superior domain accuracy, lower infrastructure costs, and full data sovereignty — while LLM quality has plateaued.</description>
+    </item>
+    <item>
+      <title>Can Memory Make an AI Worse? My Benchmark with Qwen3.5-9B and Stellar Classification</title>
+      <link>https://antoniovfranco.com/posts/2026/memory-benchmark-qwen-stellar/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/memory-benchmark-qwen-stellar/</guid>
+      <description>Benchmark reveals naive ReasoningBank memory reduces accuracy by 22pp on SDSS stellar classification. RB-EC with consolidation, pruning, and class-balanced retrieval restores baseline performance.</description>
+    </item>
+    <item>
+      <title>Spectral Classification Stability Engine: From Idea to Results</title>
+      <link>https://antoniovfranco.com/posts/2026/spectral-classification-stability-engine/</link>
+      <pubDate>Wed, 29 Apr 2026 12:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/spectral-classification-stability-engine/</guid>
+      <description>Building SCSE to apply Stable-RAG&amp;#39;s spectral clustering to astronomical SDSS classification. Documents 16 version iterations across Kaggle, RunPod A40, and A100, achieving 47% PSS reduction via DPO.</description>
+    </item>
+    <item>
+      <title>Stable-RAG Benchmark: Your RAG System Lies Depending on Document Order.</title>
+      <link>https://antoniovfranco.com/posts/2026/stable-rag-benchmark/</link>
+      <pubDate>Mon, 27 Apr 2026 12:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/stable-rag-benchmark/</guid>
+      <description>Benchmark comparing conventional RAG vs Stable-RAG reveals that reordering retrieved documents causes hallucination. Stable-RAG reduces Permutation Sensitivity Rate by 37.8% using spectral clustering and DPO alignment on Qwen3-4B.</description>
+    </item>
+    <item>
+      <title>RAG with Open-Source LLMs: Why You&#39;re Paying Too Much to Hand Your Data to Someone Else</title>
+      <link>https://antoniovfranco.com/posts/2026/rag-open-source-llms/</link>
+      <pubDate>Sun, 26 Apr 2026 12:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/rag-open-source-llms/</guid>
+      <description>Cost analysis and data sovereignty comparison of open-source vs commercial LLMs for RAG. Self-hosted Qwen3.5, DeepSeek, and GLM models match commercial quality at 10x lower cost with full data control.</description>
+    </item>
+    <item>
+      <title>Location</title>
+      <link>https://antoniovfranco.com/location/</link>
+      <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/location/</guid>
+      <description>Professor Dr von Igelfeld&amp;#39;s mailing and office addresses at the Institute of Romance Philology.</description>
+    </item>
+    <item>
+      <title>Office Hours</title>
+      <link>https://antoniovfranco.com/officehours/</link>
+      <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/officehours/</guid>
+      <description>Schedule and location for Professor Dr von Igelfeld&amp;#39;s office hours.</description>
+    </item>
+    <item>
+      <title>Your Inner Hedgehog</title>
+      <link>https://antoniovfranco.com/papers/paper3/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/papers/paper3/</guid>
+      <description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>
+    </item>
+    <item>
+      <title>List of Irregular Verbs Across Romance Languages</title>
+      <link>https://antoniovfranco.com/data/data1/</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/data/data1/</guid>
+      <description>This dataset contains all irregular verbs in known Romance languages.</description>
+    </item>
+    <item>
+      <title>Unusual Uses For Olive Oil</title>
+      <link>https://antoniovfranco.com/papers/paper1/</link>
+      <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/papers/paper1/</guid>
+      <description>This paper reviews unusual uses for olive oil throughout the Mediterranean world. Published in the Journal of Oleic Science, 2013.</description>
+    </item>
+    <item>
+      <title>The Finer Points of Sausage Dogs</title>
+      <link>https://antoniovfranco.com/papers/paper2/</link>
+      <pubDate>Tue, 28 Dec 2004 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/papers/paper2/</guid>
+      <description>This paper studies the pulmonary efficiency of sausage dogs. Published in the Journal of Canine Science, 2004.</description>
+    </item>
+    <item>
+      <title>Lectures at the Villa of Reduced Circumstances</title>
+      <link>https://antoniovfranco.com/courses/course1/</link>
+      <pubDate>Mon, 10 Mar 2003 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/courses/course1/</guid>
+      <description>This graduate course presents classical results in Romance philology.</description>
+    </item>
+    <item>
+      <title>Portugese Irregular Verbs</title>
+      <link>https://antoniovfranco.com/books/book1/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/books/book1/</guid>
+      <description>This book discusses Portugese irregular verbs in great details.</description>
+    </item>
+    <item>
+      <title>Profanity in Early Irish</title>
+      <link>https://antoniovfranco.com/courses/course2/</link>
+      <pubDate>Sat, 16 Jun 1990 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/courses/course2/</guid>
+      <description>This undergraduate course discusses profanity in Early Irish.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://antoniovfranco.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/about/</guid>
+      <description>about</description>
+    </item>
+  </channel>
+</rss>

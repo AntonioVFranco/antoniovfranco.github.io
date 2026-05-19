@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Stellar Classification on Antonio V. Franco</title>
+    <link>https://antoniovfranco.com/tags/stellar-classification/</link>
+    <description>Recent content in Stellar Classification on Antonio V. Franco</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 May 2026 00:00:00 -0300</lastBuildDate>
+    <atom:link href="https://antoniovfranco.com/tags/stellar-classification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can Memory Make an AI Worse? My Benchmark with Qwen3.5-9B and Stellar Classification</title>
+      <link>https://antoniovfranco.com/posts/2026/memory-benchmark-qwen-stellar/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 -0300</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/memory-benchmark-qwen-stellar/</guid>
+      <description>Benchmark reveals naive ReasoningBank memory reduces accuracy by 22pp on SDSS stellar classification. RB-EC with consolidation, pruning, and class-balanced retrieval restores baseline performance.</description>
+    </item>
+  </channel>
+</rss>

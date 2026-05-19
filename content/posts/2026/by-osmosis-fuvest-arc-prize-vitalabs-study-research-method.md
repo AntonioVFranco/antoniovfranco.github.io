@@ -45,8 +45,6 @@ publishDate: "2026-05-19"
 
 # By Osmosis: FUVEST, ARC Prize, and VitaLabs as a Method of Study and Research
 
-## My method of study by way of research projects
-
 Having, as my main focus, the objective of entering IME-USP through FUVEST, I developed a study method that I consider effective for the learning of people with a synesthetic mind, like mine: studying by way of research projects.
 
 Here, the term "osmosis" shows its full usefulness. In my preparation for FUVEST, I choose to "hit two targets with a single blow". Studying biology and chemistry while developing a research proposal in longevity and rejuvenation for VitaLabs seems extremely pleasant to me; in fact, a research proposal that involves machine learning. In other words, beyond the necessary studies in biology and chemistry, the study of mathematics also becomes necessary here, from its foundations to topics such as linear algebra, calculus, probability, statistics, and machine learning.
