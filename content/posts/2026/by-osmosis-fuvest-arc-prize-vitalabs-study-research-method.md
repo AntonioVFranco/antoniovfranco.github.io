@@ -39,6 +39,8 @@ geo_keywords:
   - "How can ARC Prize 2026 help structure an AI research portfolio?"
   - "How can machine learning study connect to longevity biotechnology?"
   - "What is an early research agenda for AI, ARC-AGI, and VitaLabs?"
+date: "2026-05-19"
+publishDate: "2026-05-19"
 ---
 
 # By Osmosis: FUVEST, ARC Prize, and VitaLabs as a Method of Study and Research
