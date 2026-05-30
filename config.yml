@@ -41,7 +41,7 @@ params:
   ShowCodeCopyButtons: true
   ShowShareButtons: false
   ShowAllPagesInArchive: false
-  ShowToc: true
+  ShowToc: false
   TocOpen: false
   ShowWordCount: false
   UseHugoToc: true

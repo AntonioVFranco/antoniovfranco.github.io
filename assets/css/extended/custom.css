@@ -38,6 +38,18 @@ body {
   font-family: var(--medium-serif);
 }
 
+.post-title {
+  font-size: 31px;
+  line-height: 1.18;
+  margin-bottom: 14px;
+}
+
+.post-description {
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--secondary);
+}
+
 code,
 pre,
 kbd,
