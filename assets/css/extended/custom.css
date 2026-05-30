@@ -3,6 +3,48 @@
    Inspired by akitaonrails.com/en/
    ============================================================ */
 
+:root {
+  --medium-serif: Charter, "Bitstream Charter", Georgia, Cambria, "Times New Roman", Times, serif;
+  --medium-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--medium-serif);
+  font-size: 17px;
+  line-height: 1.58;
+}
+
+.post-content,
+.md-content,
+.post-description,
+.archive-wrapper,
+.post-meta,
+.footer,
+.nav,
+.logo {
+  font-family: var(--medium-serif);
+}
+
+.post-content,
+.md-content {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.post-title,
+.archive-title,
+.archive-year,
+.archive-month {
+  font-family: var(--medium-serif);
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 /* Site logo / title */
 .top-link {
   visibility: hidden !important;
