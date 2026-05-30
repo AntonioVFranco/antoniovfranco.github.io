@@ -60,6 +60,8 @@ params:
       url: "https://www.linkedin.com/in/antoniovfranco/"
   assets:
     disableScrollBarStyle: true
+    theme_color: "#ffffff"
+    msapplication_TileColor: "#ffffff"
   cover:
     hiddenInList: false
     hiddenInSingle: true
