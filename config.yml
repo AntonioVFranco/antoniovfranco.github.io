@@ -1,7 +1,7 @@
 baseURL: "https://antoniovfranco.com/"
 languageCode: en
 title: "Antonio V. Franco"
-theme: [hugo-website, PaperMod]
+theme: [PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -16,7 +16,7 @@ sitemap:
 params:
   env: production
   author: Antonio V. Franco
-  description: "Antonio V. Franco's personal blog — thoughts on AI, engineering, and technology."
+  description: "Antonio V. Franco's personal blog about AI research, technical study, and scientific work."
   keywords:
     - "AI Engineering"
     - "RAG systems"
@@ -82,12 +82,9 @@ services:
 
 menu:
   main:
-    - name: Blog
-      url: /
-      weight: 1
     - name: About
       url: /about/
-      weight: 2
+      weight: 1
 
 markup:
   goldmark:

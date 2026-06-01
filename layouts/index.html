@@ -2,8 +2,22 @@
 {{- $pages := where .Site.RegularPages "Section" "posts" }}
 {{- $byYear := $pages.GroupByDate "2006" }}
 
-<div class="archive-wrapper">
-  <h1 class="archive-title">Posts</h1>
+<div class="home">
+  <h1 id="antonio-v-franco">Antonio V. Franco</h1>
+
+  <p>Antonio V. Franco is a Bachelor of Science in Data Science and Applications student at the Indian Institute of Technology Madras. Focused on AI research, he writes technical articles about his progress in studies and scientific work in this field.</p>
+
+  <p>For partnerships and projects, contact Antonio by email: <a href="mailto:contact@antoniovfranco.com">contact@antoniovfranco.com</a></p>
+
+  <p>You can read more about him on</p>
+
+  <ul>
+    <li><a href="https://medium.com/@AntonioVFranco">Medium</a></li>
+    <li><a href="https://github.com/AntonioVFranco">GitHub</a></li>
+    <li><a href="https://substack.com/@matematica">Substack</a> (in Portuguese)</li>
+  </ul>
+
+  <h2 id="articles">Articles</h2>
 
   {{- range $byYear }}
   <div class="archive-year-block">
@@ -18,7 +32,7 @@
         <li class="archive-item">
           <a class="archive-item-link" href="{{ .Permalink }}">{{ .Title }}</a>
           <time class="archive-item-date" datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "Jan 02" }}
+            {{ .Date.Format "Jan 2" }}
           </time>
         </li>
         {{- end }}
