@@ -1,6 +1,7 @@
 <header class="site-header" role="banner">
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "" | absLangURL }}">{{ site.Title }}</a>
+    {{- with site.Menus.main }}
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
@@ -11,10 +12,11 @@
         </span>
       </label>
       <div class="trigger">
-        {{- range site.Menus.main }}
+        {{- range . }}
         <a class="page-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
         {{- end }}
       </div>
     </nav>
+    {{- end }}
   </div>
 </header>
