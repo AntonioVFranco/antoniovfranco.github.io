@@ -180,6 +180,12 @@ pre > code {
   font-size: 1.5em;
 }
 
+.home-section-rule {
+  border: 0;
+  border-top: 1px solid rgba(232, 232, 232, 0.75);
+  margin: 34px 0 28px;
+}
+
 .archive-year-block {
   margin-bottom: 30px;
 }
