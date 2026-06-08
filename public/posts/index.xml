@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Antonio V. Franco</title><link>https://antoniovfranco.com/posts/</link><description>Recent content in Posts on Antonio V. Franco</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://antoniovfranco.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>By Osmosis: FUVEST, ARC Prize, and VitaLabs as a Method of Study and Research</title><link>https://antoniovfranco.com/posts/2026/by-osmosis-fuvest-arc-prize-vitalabs-study-research-method/</link><pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate><guid>https://antoniovfranco.com/posts/2026/by-osmosis-fuvest-arc-prize-vitalabs-study-research-method/</guid><description>A personal research agenda article on using FUVEST preparation, ARC Prize 2026, and VitaLabs longevity biotechnology as an integrated method of study, technical writing, and early AI research formation.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Antonio V. Franco</title>
+    <link>https://antoniovfranco.com/posts/</link>
+    <description>Recent content in Posts on Antonio V. Franco</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://antoniovfranco.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>By Osmosis: FUVEST, ARC Prize, and VitaLabs as a Method of Study and Research</title>
+      <link>https://antoniovfranco.com/posts/2026/by-osmosis-fuvest-arc-prize-vitalabs-study-research-method/</link>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/by-osmosis-fuvest-arc-prize-vitalabs-study-research-method/</guid>
+      <description>A personal research agenda article on using FUVEST preparation, ARC Prize 2026, and VitaLabs longevity biotechnology as an integrated method of study, technical writing, and early AI research formation.</description>
+    </item>
+  </channel>
+</rss>
