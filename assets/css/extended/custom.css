@@ -437,3 +437,10 @@ pre > code {
   margin: 30px 0;
   text-align: center;
 }
+
+/* Mobile typography: reduce article text by 1px */
+@media screen and (max-width: 600px) {
+  .post-content {
+    font-size: 17px;
+  }
+}
