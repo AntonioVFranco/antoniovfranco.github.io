@@ -1,14 +1,12 @@
 ---
 title: "Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money"
-description: "It is like buying blank CDs in the 2000s: you simply have not realized that something much better and much cheaper already exists."
+description: "By an IITM student, researcher, and agentic AI enthusiast who got tired of paying absurd amounts for ChatGPT and Claude subscriptions"
 date: "2026-06-13"
 publishDate: "2026-06-13"
 draft: false
 ---
 
 ![(Antonio V. Franco)](agentic-ai-header.png)
-
-By an IITM student, researcher, and agentic AI enthusiast who got tired of paying absurd amounts for ChatGPT and Claude subscriptions
 
 June 2026. If you are still paying more than fifty cents per million output tokens in any agentic pipeline, forgive my frankness: you are literally burning money. No, this is not an exaggeration on my part, but simply the relationship between API costs and absurd usage — because, indeed, LLMs should be used absurdly, whether you are a solo researcher like me or a startup. And here, the reason has a name, surname, and version: DeepSeek V4 Flash. And what it represents goes far beyond excellent benchmark results — it represents the consolidation of a trend that demonetizes the already psychologically consolidated commercial models and pushes the center of gravity toward SLMs, the highly specialized Small Language Models.
 
