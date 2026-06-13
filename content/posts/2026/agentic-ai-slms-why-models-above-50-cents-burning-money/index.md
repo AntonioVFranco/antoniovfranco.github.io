@@ -6,7 +6,7 @@ publishDate: "2026-06-13"
 draft: false
 ---
 
-![(Antonio V. Franco)](images/agentic-ai-header.png)
+![(Antonio V. Franco)](agentic-ai-header.png)
 
 By an IITM student, researcher, and agentic AI enthusiast who got tired of paying absurd amounts for ChatGPT and Claude subscriptions
 
@@ -16,7 +16,7 @@ I have been monitoring price-per-token curves since the time when we thought it 
 
 The official numbers from DeepSeek itself, from its API pricing page, consulted on 06/10/2026, show:
 
-![(Antonio V. Franco)](images/deepseek-pricing.png)
+![(Antonio V. Franco)](deepseek-pricing.png)
 
 The price delta is 60 times. Sixty. The point is not that GPT-5 is bad; it is that what we previously considered "quality" — commercial LLMs — no longer fits that category, which means that any price above US$0.50 per 1M output tokens has become unnecessary.
 

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money | Antonio V. Franco</title>
+<meta name="keywords" content="">
+<meta name="description" content="It is like buying blank CDs in the 2000s: you simply have not realized that something much better and much cheaper already exists.">
+<meta name="author" content="Antonio V. Franco">
+<link rel="canonical" href="https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.409bd1e2900be39fbc648b9a7fc7acd12cf3ded6f46e8b41ab7ef8a22e3dbc38.css" integrity="sha256-QJvR4pAL45&#43;8ZIuaf8es0Szz3tb0botBq374oi49vDg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://antoniovfranco.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://antoniovfranco.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://antoniovfranco.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://antoniovfranco.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://antoniovfranco.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<link rel="alternate" hreflang="en" href="https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/">
+  <meta property="og:site_name" content="Antonio V. Franco">
+  <meta property="og:title" content="Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money">
+  <meta property="og:description" content="It is like buying blank CDs in the 2000s: you simply have not realized that something much better and much cheaper already exists.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-06-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-13T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money">
+  <meta name="twitter:description" content="It is like buying blank CDs in the 2000s: you simply have not realized that something much better and much cheaper already exists.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://antoniovfranco.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money",
+      "item": "https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money",
+  "name": "Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money",
+  "description": "It is like buying blank CDs in the 2000s: you simply have not realized that something much better and much cheaper already exists.",
+  "keywords": [
+    
+  ],
+  "articleSection": "Posts",
+  "articleBody": "\nBy an IITM student, researcher, and agentic AI enthusiast who got tired of paying absurd amounts for ChatGPT and Claude subscriptions\nJune 2026. If you are still paying more than fifty cents per million output tokens in any agentic pipeline, forgive my frankness: you are literally burning money. No, this is not an exaggeration on my part, but simply the relationship between API costs and absurd usage — because, indeed, LLMs should be used absurdly, whether you are a solo researcher like me or a startup. And here, the reason has a name, surname, and version: DeepSeek V4 Flash. And what it represents goes far beyond excellent benchmark results — it represents the consolidation of a trend that demonetizes the already psychologically consolidated commercial models and pushes the center of gravity toward SLMs, the highly specialized Small Language Models.\nI have been monitoring price-per-token curves since the time when we thought it was normal to use a model like GPT-4o, which, by the way, was the first major model I used. With every Claude model released, I have been monitoring the relationship between token cost and benchmark performance, and comparing it with Chinese models. In an academic and professional context where we seek to maximize the efficiency of our activities — whatever they may be — we tend to be drawn toward what feels like magic: the DeepSeek V4 line.\nThe official numbers from DeepSeek itself, from its API pricing page, consulted on 06/10/2026, show:\nThe price delta is 60 times. Sixty. The point is not that GPT-5 is bad; it is that what we previously considered “quality” — commercial LLMs — no longer fits that category, which means that any price above US$0.50 per 1M output tokens has become unnecessary.\nThe DeepSeek phenomenon is not isolated. The Chinese ecosystem has embraced the strategy of saturating the market with SLMs of extremely high task-specific efficiency. While the West is still discussing whether agents need ever-larger models, laboratories in Hangzhou and Beijing are already packaging SLMs for industrial tasks.\nThe best example I have tested so far is Qwen3-Coder-Next, released in April 2026. The model has only 3.8B active parameters, with a MoE architecture totaling 7B parameters, and was trained exclusively for multilingual code generation and editing. It is not meant to discuss philosophy, summarize emails, or plan trips, but in code, it is a major specialist.\nThis model crystallizes what I define as an SLM in the agentic era: it is not simply a small model, but a model with strong task alignment, trained on high-quality synthetic data and reinforced by specific RL, namely RLHF applied to tool use, debugging, and bug correction. According to its technical paper, 80% of Qwen3-Coder-Next’s gains came from the curation of coding-agent trajectories, not from the model’s size. In other words, its differentiator lies in specialization — an excellent coder, by the way — and because it is a specialist, its cost and number of parameters drop drastically compared with already traditional commercial LLMs.\nThe trend I observe in benchmarks points to a clear convergence: by 2027, the standard model for industrial agentic AI will be based on specific SLMs, orchestrated by a slightly larger — and cheap — “conductor” model.\nFirst, the bottleneck of agents in production is not the raw reasoning capacity of the LLM, but reliability in repeatable tasks: calling APIs, extracting schemas, filling spreadsheets, generating queries. An SLM trained for a closed domain gets more things right and consumes fewer tokens — here already lies the benefit of using SLMs.\nSecond, the cost of fine-tuning also collapses. Tools such as DeepSeek-DistillKit and Qwen-Factory make it possible to generate a specific SLM from a teacher model, such as V4 Flash, in under 48 hours, using datasets of 10,000 examples and a single A100 GPU, which you, like me, can rent with perfect convenience on Runpod. The inference ecosystem for SLMs has also exploded: runtimes such as llama.cpp, vLLM, and the new ExoEngine deliver throughput of 300 tokens/s for 3B models on consumer hardware.\nThird, China understood the rules of the game earlier and is flooding the market with SLM families focused on “industrial agents”: Qwen-Agent, DeepSeek-Agent, Baidu Ernie-Lite-Tool, ByteDance Seed-Executor. These models are released with permissive licenses, API prices below US$0.30, and tool benchmarks that already surpass the generalist models of 2025.\nSetting a ceiling of US$0.50 output per 1M tokens is not merely a favor I did for my wallet, but a survival habit for every student, every researcher, every entrepreneur, every person who, ultimately, works on building agentic systems. Above fifty cents, you are fully burning your money — perhaps because you want to brag about being a Claude user, like iPhone users do, or perhaps simply because you do not know the real power of SLMs.\nIn 2026, the best model for agents is not the most famous one, nor the one with the highest benchmark score. It is the one that delivers the best cost-benefit ratio. And when I look toward 2027, I see a scenario in which the overwhelming majority of agents in factories, hospitals, and offices run on SLMs. Whoever realizes this first will have a pleasant surprise in their budget, whether they are a solo professional or a company.\nPartnerships and projects: contact@antoniovfranco.com\n",
+  "wordCount" : "879",
+  "inLanguage": "en",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".post-content", ".post-title"]
+  },
+  "datePublished": "2026-06-13T00:00:00Z",
+  "dateModified": "2026-06-13T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Antonio V. Franco"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Antonio V. Franco",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://antoniovfranco.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top"><header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="https://antoniovfranco.com/">Antonio V. Franco</a>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+<article class="post-single" itemscope itemtype="https://schema.org/Article" role="article">
+  <meta itemprop="author" content="Antonio V. Franco">
+  <meta itemprop="datePublished" content="2026-06-13T00:00:00&#43;00:00">
+  <meta itemprop="dateModified" content="2026-06-13T00:00:00&#43;00:00">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent" itemprop="headline">
+      Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money
+    </h1>
+    <div class="post-description" itemprop="description">
+      It is like buying blank CDs in the 2000s: you simply have not realized that something much better and much cheaper already exists.
+    </div>
+    <div class="post-meta"><span title='2026-06-13 00:00:00 +0000 UTC'>June 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Antonio V. Franco</span>
+
+</div>
+  </header> 
+  <section class="post-content md-content" aria-label="Article content" itemprop="articleBody"><p><img alt="(Antonio V. Franco)" loading="lazy" src="/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/agentic-ai-header.png"></p>
+<p>By an IITM student, researcher, and agentic AI enthusiast who got tired of paying absurd amounts for ChatGPT and Claude subscriptions</p>
+<p>June 2026. If you are still paying more than fifty cents per million output tokens in any agentic pipeline, forgive my frankness: you are literally burning money. No, this is not an exaggeration on my part, but simply the relationship between API costs and absurd usage — because, indeed, LLMs should be used absurdly, whether you are a solo researcher like me or a startup. And here, the reason has a name, surname, and version: DeepSeek V4 Flash. And what it represents goes far beyond excellent benchmark results — it represents the consolidation of a trend that demonetizes the already psychologically consolidated commercial models and pushes the center of gravity toward SLMs, the highly specialized Small Language Models.</p>
+<p>I have been monitoring price-per-token curves since the time when we thought it was normal to use a model like GPT-4o, which, by the way, was the first major model I used. With every Claude model released, I have been monitoring the relationship between token cost and benchmark performance, and comparing it with Chinese models. In an academic and professional context where we seek to maximize the efficiency of our activities — whatever they may be — we tend to be drawn toward what feels like magic: the DeepSeek V4 line.</p>
+<p>The official numbers from DeepSeek itself, from its API pricing page, consulted on 06/10/2026, show:</p>
+<p><img alt="(Antonio V. Franco)" loading="lazy" src="/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/deepseek-pricing.png"></p>
+<p>The price delta is 60 times. Sixty. The point is not that GPT-5 is bad; it is that what we previously considered &ldquo;quality&rdquo; — commercial LLMs — no longer fits that category, which means that any price above US$0.50 per 1M output tokens has become unnecessary.</p>
+<p>The DeepSeek phenomenon is not isolated. The Chinese ecosystem has embraced the strategy of saturating the market with SLMs of extremely high task-specific efficiency. While the West is still discussing whether agents need ever-larger models, laboratories in Hangzhou and Beijing are already packaging SLMs for industrial tasks.</p>
+<p>The best example I have tested so far is Qwen3-Coder-Next, released in April 2026. The model has only 3.8B active parameters, with a MoE architecture totaling 7B parameters, and was trained exclusively for multilingual code generation and editing. It is not meant to discuss philosophy, summarize emails, or plan trips, but in code, it is a major specialist.</p>
+<p>This model crystallizes what I define as an SLM in the agentic era: it is not simply a small model, but a model with strong task alignment, trained on high-quality synthetic data and reinforced by specific RL, namely RLHF applied to tool use, debugging, and bug correction. According to its technical paper, 80% of Qwen3-Coder-Next&rsquo;s gains came from the curation of coding-agent trajectories, not from the model&rsquo;s size. In other words, its differentiator lies in specialization — an excellent coder, by the way — and because it is a specialist, its cost and number of parameters drop drastically compared with already traditional commercial LLMs.</p>
+<p>The trend I observe in benchmarks points to a clear convergence: by 2027, the standard model for industrial agentic AI will be based on specific SLMs, orchestrated by a slightly larger — and cheap — &ldquo;conductor&rdquo; model.</p>
+<p>First, the bottleneck of agents in production is not the raw reasoning capacity of the LLM, but reliability in repeatable tasks: calling APIs, extracting schemas, filling spreadsheets, generating queries. An SLM trained for a closed domain gets more things right and consumes fewer tokens — here already lies the benefit of using SLMs.</p>
+<p>Second, the cost of fine-tuning also collapses. Tools such as DeepSeek-DistillKit and Qwen-Factory make it possible to generate a specific SLM from a teacher model, such as V4 Flash, in under 48 hours, using datasets of 10,000 examples and a single A100 GPU, which you, like me, can rent with perfect convenience on Runpod. The inference ecosystem for SLMs has also exploded: runtimes such as llama.cpp, vLLM, and the new ExoEngine deliver throughput of 300 tokens/s for 3B models on consumer hardware.</p>
+<p>Third, China understood the rules of the game earlier and is flooding the market with SLM families focused on &ldquo;industrial agents&rdquo;: Qwen-Agent, DeepSeek-Agent, Baidu Ernie-Lite-Tool, ByteDance Seed-Executor. These models are released with permissive licenses, API prices below US$0.30, and tool benchmarks that already surpass the generalist models of 2025.</p>
+<p>Setting a ceiling of US$0.50 output per 1M tokens is not merely a favor I did for my wallet, but a survival habit for every student, every researcher, every entrepreneur, every person who, ultimately, works on building agentic systems. Above fifty cents, you are fully burning your money — perhaps because you want to brag about being a Claude user, like iPhone users do, or perhaps simply because you do not know the real power of SLMs.</p>
+<p>In 2026, the best model for agents is not the most famous one, nor the one with the highest benchmark score. It is the one that delivers the best cost-benefit ratio. And when I look toward 2027, I see a scenario in which the overwhelming majority of agents in factories, hospitals, and offices run on SLMs. Whoever realizes this first will have a pleasant surprise in their budget, whether they are a solo professional or a company.</p>
+<hr>
+<p><em>Partnerships and projects:</em> <a href="mailto:contact@antoniovfranco.com">contact@antoniovfranco.com</a></p>
+
+
+  </section>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+    <nav aria-label="Post navigation">
+
+    </nav>
+  </footer>
+</article>
+    </div>
+  </main>
+<footer class="site-footer h-card">
+  <data class="u-url" value="https://antoniovfranco.com/"></data>
+  <div class="wrapper">
+    <h2 class="footer-heading">Antonio V. Franco</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Antonio V. Franco</li>
+          <li><a class="u-email" href="mailto:contact@antoniovfranco.com">contact@antoniovfranco.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p>Antonio V. Franco&#39;s personal blog about AI research, technical study, and scientific work.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
