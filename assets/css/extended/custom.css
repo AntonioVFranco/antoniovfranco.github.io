@@ -409,7 +409,7 @@ pre > code {
 
 .post-content {
   font-family: "Spectral", Georgia, "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -441,7 +441,7 @@ pre > code {
 /* Mobile typography: reduce article text by 1px */
 @media screen and (max-width: 600px) {
   .post-content {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
