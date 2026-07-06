@@ -104,3 +104,7 @@ v0.1 does not settle the question of SLM efficiency. It establishes a starting p
 The next steps include expanding the dataset with more examples per task family, creating public and private splits to reduce overfitting risk, adding more eligible models to the pool, conducting a statistically meaningful evaluation with controlled budget and repetitions, and training and publishing effective PyTorch baselines. Improvements to the Hugging Face Space to support dynamic submissions and the development of metrics by task family are also on the roadmap.
 
 In short, the project offers a practical contribution to the language model research and engineering community: a benchmark centered on economic efficiency, with a transparent metric, open implementation, and reproducible pipeline. v0.1 serves as a proof of concept and a foundation for future evaluations, aligning model selection with the real budget constraints of production applications.
+
+---
+
+*Partnerships and projects:* contact@antoniovfranco.com
