@@ -1,7 +1,7 @@
 ---
 title: "Technical Report: Auditable Contract Screening Application Based on Natural Language Inference"
-date: "2026-07-06"
-publishDate: "2026-07-06"
+date: "2026-07-01"
+publishDate: "2026-07-01"
 draft: false
 ---
 

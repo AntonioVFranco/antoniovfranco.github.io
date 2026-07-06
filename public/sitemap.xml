@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://antoniovfranco.com/</loc>
-    <lastmod>2026-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://antoniovfranco.com/posts/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://antoniovfranco.com/posts/2026/cost-per-correct-answer-metric-slms/</loc>
+    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://antoniovfranco.com/posts/2026/auditable-contract-screening-nli/</loc>
+    <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/</loc>
+    <lastmod>2026-06-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
