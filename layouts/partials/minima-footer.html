@@ -1,0 +1,19 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="site-footer h-card">
+  <data class="u-url" value="{{ "" | absURL }}"></data>
+  <div class="wrapper">
+    <h2 class="footer-heading">{{ site.Title }}</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">{{ site.Title }}</li>
+          <li><a class="u-email" href="mailto:contact@antoniovfranco.com">contact@antoniovfranco.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p>{{ site.Params.description }}</p>
+      </div>
+    </div>
+  </div>
+</footer>
+{{- end }}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but… | Antonio V. Franco</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+  
+  (Antonio V. Franco)
+
+Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.
+No, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.
+I remember the launch of Sonnet 4.5 as if it were yesterday. It was one of those moments when the developer community noticed a considerable leap in quality across all existing models — and, make no mistake, the qualitative leap was undeniable. Deeper reasoning, almost human contextual understanding, truly functional code in complex projects. In my head, I said: &ldquo;Damn! I do not need anything better.&rdquo; And, in a way, that was not an exaggeration. Sonnet 4.5 elegantly solved problems that previously required workarounds and patches.">
+<meta name="author" content="Antonio V. Franco">
+<link rel="canonical" href="https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9ce7514b9bd5d6731653681215550a66cb7f7d1f2f1c734f54ee41278f808f78.css" integrity="sha256-nOdRS5vV1nMWU2gSFVUKZst/fR8vHHNPVO5BJ4&#43;Aj3g=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://antoniovfranco.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://antoniovfranco.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://antoniovfranco.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://antoniovfranco.com/apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<link rel="alternate" hreflang="en" href="https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/">
+  <meta property="og:site_name" content="Antonio V. Franco">
+  <meta property="og:title" content="GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but…">
+  <meta property="og:description" content="(Antonio V. Franco) Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.
+No, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.
+I remember the launch of Sonnet 4.5 as if it were yesterday. It was one of those moments when the developer community noticed a considerable leap in quality across all existing models — and, make no mistake, the qualitative leap was undeniable. Deeper reasoning, almost human contextual understanding, truly functional code in complex projects. In my head, I said: “Damn! I do not need anything better.” And, in a way, that was not an exaggeration. Sonnet 4.5 elegantly solved problems that previously required workarounds and patches.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-06-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-25T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but…">
+  <meta name="twitter:description" content="(Antonio V. Franco) Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.
+No, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.
+I remember the launch of Sonnet 4.5 as if it were yesterday. It was one of those moments when the developer community noticed a considerable leap in quality across all existing models — and, make no mistake, the qualitative leap was undeniable. Deeper reasoning, almost human contextual understanding, truly functional code in complex projects. In my head, I said: “Damn! I do not need anything better.” And, in a way, that was not an exaggeration. Sonnet 4.5 elegantly solved problems that previously required workarounds and patches.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://antoniovfranco.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but…",
+      "item": "https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but…",
+  "name": "GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but…",
+  "description": " (Antonio V. Franco) Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.\nNo, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.\nI remember the launch of Sonnet 4.5 as if it were yesterday. It was one of those moments when the developer community noticed a considerable leap in quality across all existing models — and, make no mistake, the qualitative leap was undeniable. Deeper reasoning, almost human contextual understanding, truly functional code in complex projects. In my head, I said: \u0026ldquo;Damn! I do not need anything better.\u0026rdquo; And, in a way, that was not an exaggeration. Sonnet 4.5 elegantly solved problems that previously required workarounds and patches.\n",
+  "keywords": [
+    
+  ],
+  "articleSection": "Posts",
+  "articleBody": " (Antonio V. Franco) Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.\nNo, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.\nI remember the launch of Sonnet 4.5 as if it were yesterday. It was one of those moments when the developer community noticed a considerable leap in quality across all existing models — and, make no mistake, the qualitative leap was undeniable. Deeper reasoning, almost human contextual understanding, truly functional code in complex projects. In my head, I said: “Damn! I do not need anything better.” And, in a way, that was not an exaggeration. Sonnet 4.5 elegantly solved problems that previously required workarounds and patches.\nThat feeling of sufficiency repeated itself with the following open-source models. Then came the Qwen-3.5 family of models — excellent models, by the way! — each version pushing the limits of what was possible with a cost-benefit ratio that truly challenged what we had understood until then as common sense. Qwen3-Coder-Next, specifically, made me realize just how powerful and cheap a model can be — and understand, as I pointed out in this article, that the future of models in the industry will be SLMs. Soon after, the DeepSeek V4 models, although without as much fanfare — the community had expected their release during Chinese New Year, which did not happen — arrived commanding respect, despite the delay. With each release, I had the exact same certainty: we had reached the top of what was satisfactory for a developer. There was nothing left to evolve in what truly mattered for my daily work.\nAh… Pure mistake. And thank God it was a mistake.\nWhen I put GLM-5.2 to work, my first reaction was: “Is it really all that?” The answer came when I analyzed the work it generated. A level of code quality and efficiency that, if there had been any doubt that a model could surprise me more than Sonnet 4.5 and its peers, that doubt vanished completely. At that moment, I understood that there was indeed room — plenty of room — for something to impress me beyond everything I had experienced.\nThe most fascinating part is that this perception did not come from a closed, extremely expensive, inaccessible model — ah, Fable 5… so good and so expensive… It came from a model running on infrastructure managed by a service that has already become trivial for developers. And this brings us to the elephant-in-the-room question: how close are we, those of us who bet on open models, to having in our hands a Chinese model with capabilities comparable to those of Fable 5?\nThe answer, surprisingly, is: closer than the proprietary software industry would like to admit. Fable 5 symbolizes, for many, the ceiling of what a closed model can offer: multimodal reasoning, analytical depth, and a veneer of almost antiseptic alignment. But, when testing GLM-5.2 side by side with DeepSeek V4 Pro and Flash variants, and with the latest weights from the Qwen-3.5 family, it becomes evident that the gap is visibly narrowing — and not through imitation, but through independent research paths. Open Chinese models are not merely keeping up; they are defining new frontiers in inference efficiency, knowledge compression, and adaptation to consumer hardware.\nAnd what about costs? Here lies one of the pillars that makes this discussion inseparable from the defense of open artificial intelligence. GLM-5.2 can be run via Ollama Cloud with inference costs that, in many scenarios, fall below a few cents per million tokens — orders of magnitude lower than what one pays to access Fable 5 or other closed models. DeepSeek V4 Pro and Flash follow the same philosophy, with prices that allow an independent researcher like myself to run experiments that previously would have required an excellent corporate budget. The Qwen-3.5 family, in turn, is available in such a wide range of quantizations that it can be adjusted to run on a home GPU, no joke. Fable 5, by contrast, remains under the yoke of premium subscriptions, usage fees, and an access policy that decides, for you, what you are allowed to investigate.\nThis is exactly where I need to defend something that transcends benchmarks and cost spreadsheets. Artificial intelligence must be open and free to every human being, regardless of the use one intends to make of it. It is about understanding that real progress — the kind that distributes power instead of concentrating it — only sustains itself when the most transformative tools are free and universal.\nSome will argue that total openness is dangerous, that certain uses require control and barriers. I disagree, with the conviction of someone who observes history. The conscious and ethical use of intelligence is not born from foolish laws that hinder more than they protect, nor from restrictions that presume bad faith as the default. It is born from the evolution of the principles of human society, from the collective maturation that occurs when people have unrestricted access to knowledge and can experiment, make mistakes, and correct their course in public.\nSeeing GLM-5.2 operate with perfect naturalness reminded me that genius is not the monopoly of a laboratory, a country, or a business model. Genius is distributed, and the only way to honor it is to ensure that minds around the world can access it, modify it, and improve it without asking for permission. What Sonnet 4.5, Qwen3-Coder-Next, and DeepSeek V4 proved in the past — and what GLM-5.2 now proves — is that the open ecosystem is not an inferior alternative to the closed one; increasingly, it is the vanguard.\nI thought Sonnet 4.5 and similar open models were enough. Fortunately, I was wrong. And, if the current pace continues, I will soon look at Fable 5 with the same distant admiration with which we look at a powerful relic.\nPartnerships and projects: contact@antoniovfranco.com\n",
+  "wordCount" : "1008",
+  "inLanguage": "en",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".post-content", ".post-title"]
+  },
+  "datePublished": "2026-06-25T00:00:00Z",
+  "dateModified": "2026-06-25T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Antonio V. Franco"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Antonio V. Franco",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://antoniovfranco.com/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+
+
+</head>
+<body id="top"><header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="https://antoniovfranco.com/">Antonio V. Franco</a>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+<article class="post-single" itemscope itemtype="https://schema.org/Article" role="article">
+  <meta itemprop="author" content="Antonio V. Franco">
+  <meta itemprop="datePublished" content="2026-06-25T00:00:00&#43;00:00">
+  <meta itemprop="dateModified" content="2026-06-25T00:00:00&#43;00:00">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent" itemprop="headline">
+      GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but…
+    </h1>
+    <div class="post-meta"><span title='2026-06-25 00:00:00 +0000 UTC'>June 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Antonio V. Franco</span>
+
+</div>
+  </header> 
+  <section class="post-content md-content" aria-label="Article content" itemprop="articleBody"><p><figure style="text-align: center; margin: 1.5em 0;">
+  <img alt="(Antonio V. Franco)" loading="lazy" src="/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/glm-header.png">
+  <figcaption style="font-size: 0.85em; color: #666; margin-top: 0.5em;">(Antonio V. Franco)</figcaption>
+</figure></p>
+<p>Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.</p>
+<p>No, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.</p>
+<p>I remember the launch of Sonnet 4.5 as if it were yesterday. It was one of those moments when the developer community noticed a considerable leap in quality across all existing models — and, make no mistake, the qualitative leap was undeniable. Deeper reasoning, almost human contextual understanding, truly functional code in complex projects. In my head, I said: &ldquo;Damn! I do not need anything better.&rdquo; And, in a way, that was not an exaggeration. Sonnet 4.5 elegantly solved problems that previously required workarounds and patches.</p>
+<p>That feeling of sufficiency repeated itself with the following open-source models. Then came the Qwen-3.5 family of models — excellent models, by the way! — each version pushing the limits of what was possible with a cost-benefit ratio that truly challenged what we had understood until then as common sense. Qwen3-Coder-Next, specifically, made me realize just how powerful and cheap a model can be — and understand, as I pointed out in this article, that the future of models in the industry will be SLMs. Soon after, the DeepSeek V4 models, although without as much fanfare — the community had expected their release during Chinese New Year, which did not happen — arrived commanding respect, despite the delay. With each release, I had the exact same certainty: we had reached the top of what was satisfactory for a developer. There was nothing left to evolve in what truly mattered for my daily work.</p>
+<p>Ah… Pure mistake. And thank God it was a mistake.</p>
+<p>When I put GLM-5.2 to work, my first reaction was: &ldquo;Is it really all that?&rdquo; The answer came when I analyzed the work it generated. A level of code quality and efficiency that, if there had been any doubt that a model could surprise me more than Sonnet 4.5 and its peers, that doubt vanished completely. At that moment, I understood that there was indeed room — plenty of room — for something to impress me beyond everything I had experienced.</p>
+<p>The most fascinating part is that this perception did not come from a closed, extremely expensive, inaccessible model — ah, Fable 5… so good and so expensive… It came from a model running on infrastructure managed by a service that has already become trivial for developers. And this brings us to the elephant-in-the-room question: how close are we, those of us who bet on open models, to having in our hands a Chinese model with capabilities comparable to those of Fable 5?</p>
+<p>The answer, surprisingly, is: closer than the proprietary software industry would like to admit. Fable 5 symbolizes, for many, the ceiling of what a closed model can offer: multimodal reasoning, analytical depth, and a veneer of almost antiseptic alignment. But, when testing GLM-5.2 side by side with DeepSeek V4 Pro and Flash variants, and with the latest weights from the Qwen-3.5 family, it becomes evident that the gap is visibly narrowing — and not through imitation, but through independent research paths. Open Chinese models are not merely keeping up; they are defining new frontiers in inference efficiency, knowledge compression, and adaptation to consumer hardware.</p>
+<p>And what about costs? Here lies one of the pillars that makes this discussion inseparable from the defense of open artificial intelligence. GLM-5.2 can be run via Ollama Cloud with inference costs that, in many scenarios, fall below a few cents per million tokens — orders of magnitude lower than what one pays to access Fable 5 or other closed models. DeepSeek V4 Pro and Flash follow the same philosophy, with prices that allow an independent researcher like myself to run experiments that previously would have required an excellent corporate budget. The Qwen-3.5 family, in turn, is available in such a wide range of quantizations that it can be adjusted to run on a home GPU, no joke. Fable 5, by contrast, remains under the yoke of premium subscriptions, usage fees, and an access policy that decides, for you, what you are allowed to investigate.</p>
+<p>This is exactly where I need to defend something that transcends benchmarks and cost spreadsheets. Artificial intelligence must be open and free to every human being, regardless of the use one intends to make of it. It is about understanding that real progress — the kind that distributes power instead of concentrating it — only sustains itself when the most transformative tools are free and universal.</p>
+<p>Some will argue that total openness is dangerous, that certain uses require control and barriers. I disagree, with the conviction of someone who observes history. The conscious and ethical use of intelligence is not born from foolish laws that hinder more than they protect, nor from restrictions that presume bad faith as the default. It is born from the evolution of the principles of human society, from the collective maturation that occurs when people have unrestricted access to knowledge and can experiment, make mistakes, and correct their course in public.</p>
+<p>Seeing GLM-5.2 operate with perfect naturalness reminded me that genius is not the monopoly of a laboratory, a country, or a business model. Genius is distributed, and the only way to honor it is to ensure that minds around the world can access it, modify it, and improve it without asking for permission. What Sonnet 4.5, Qwen3-Coder-Next, and DeepSeek V4 proved in the past — and what GLM-5.2 now proves — is that the open ecosystem is not an inferior alternative to the closed one; increasingly, it is the vanguard.</p>
+<p>I thought Sonnet 4.5 and similar open models were enough. Fortunately, I was wrong. And, if the current pace continues, I will soon look at Fable 5 with the same distant admiration with which we look at a powerful relic.</p>
+<hr>
+<p><em>Partnerships and projects:</em> <a href="mailto:contact@antoniovfranco.com">contact@antoniovfranco.com</a></p>
+
+
+  </section>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+    <nav aria-label="Post navigation">
+<nav class="paginav">
+  <a class="prev" href="https://antoniovfranco.com/posts/2026/auditable-contract-screening-nli/">
+    <span class="title">« Prev</span>
+    <span>Technical Report: Auditable Contract Screening Application Based on Natural Language Inference</span>
+  </a>
+  <a class="next" href="https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/">
+    <span class="title">Next »</span>
+    <span>Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money</span>
+  </a>
+</nav>
+
+    </nav>
+  </footer>
+</article>
+    </div>
+  </main>
+<footer class="site-footer h-card">
+  <data class="u-url" value="https://antoniovfranco.com/"></data>
+  <div class="wrapper">
+    <h2 class="footer-heading">Antonio V. Franco</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Antonio V. Franco</li>
+          <li><a class="u-email" href="mailto:contact@antoniovfranco.com">contact@antoniovfranco.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p>Antonio V. Franco&#39;s personal blog about AI research, technical study, and scientific work.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+---
+title: "Quantized LLMs Are Phenomenal in Terms of Cost-Effectiveness (and You Should Consider Them for Your Startup)"
+description: "Why startups should stop defaulting to premium APIs and start with quantized open models"
+date: "2026-07-23"
+publishDate: "2026-07-23"
+draft: false
+---
+
+![(Antonio V. Franco)](cover.png)
+
+Everyone who has spent time at an AI startup knows the scene. The product changes every week, the agents are still at that stage where you need to run dozens of attempts before the workflow stops breaking, nobody has any idea what the volume will look like three months from now, and yet the first thing the team does is connect everything to the most expensive API available. Not because someone sat down, tested it, and proved that the API was indispensable. It happens because saying "we use Claude" or "we use GPT" in a meeting sounds like a decision that justifies itself. Nobody questions it. Nobody asks why. It is the technical equivalent of ordering the most expensive dish on the menu because "it must be good."
+
+Then usage grows. And it grows in a way nobody planned. At first, it is just a few internal prompts, nothing serious. Then come coding agents, pull request reviews, automated research, support, document analysis, back-office routines, and customer-facing features. By the time the bill finally arrives and someone stares at it in disbelief, the company has already spread the same provider across every corner of the architecture. Removing it becomes a three-month project.
+
+In July 2026, this autopilot decision is becoming difficult to defend. Kimi K2.7 Code already has open weights, a 256,000-token context window, and inference-ready FP4 variants. GLM 5.2 is also available in an NVFP4 version prepared for agents, RAG, and commercial applications. Kimi K3, a 2.8-trillion-parameter monster with a one-million-token context window, is already being served remotely, and the full release of its weights has been announced for July 27.
+
+The open frontier is no longer chasing the models of 2024. It is arriving only a few steps behind the best proprietary models of 2026 (and being packaged by platforms that offer multiple models through the same interface, with more generous limits and far less punitive inference economics).
+
+The question is no longer whether these models are "good enough." The question is why a startup would continue paying the Anthropic or OpenAI premium on every call, including tasks where that premium buys little or no practical advantage.
+
+## The Mistake Starts With the Default Model
+
+Prices look modest when presented per million tokens. Five dollars for input, thirty dollars for output. Ten dollars for input, fifty dollars for output. The unit is small enough to seem harmless and abstract enough to conceal what happens when agents start doing real work.
+
+Consider an operation that processes 500 million input tokens and generates 100 million output tokens per month. That is not an absurd scale for a team running coding, research, and automation agents every day.
+
+At Claude Sonnet 5's introductory price, that volume costs $2,000 per month. When the promotion ends on August 31, it rises to $3,000. With GPT-5.6 Terra, it costs $2,750. With GPT-5.6 Sol, $5,500. With Claude Fable 5, $10,000.
+
+That is before web search, containers, file search, regional processing, and other items that appear separately on the pricing table. And there is one particularly elegant detail: Anthropic reports that the tokenizer used by its newer models produces approximately 30% more tokens for the same text. The table can continue displaying prices "per million"; the customer simply reaches one million faster.
+
+The problem is not that a startup cannot afford a few thousand dollars. The problem is the kind of behavior this billing model produces. And here I need to be direct: when every long session has a meter running, the team begins saving precisely where it should be experimenting. The engineer runs one attempt instead of four. The agent receives less context. Research is stopped early. Parallelism starts to look wasteful. Workflows that could have been left running for hours begin to depend on informal approval. The company buys the most capable model and, because of its price, uses less total capability. It is like buying a sports car and driving at 40 km/h because fuel is expensive.
+
+## Quantization Is No Longer Synonymous With Compromise
+
+The old image of a quantized model is that of a slimmed-down copy: smaller, cheaper, and visibly worse. That image survives because many people still think of quantization as a post-training compression technique applied to a model that was not designed for it. That is not what is happening today.
+
+Kimi K2.7 Code was released with FP4 as a first-class citizen. The architecture was designed so that the quantized variant is not an afterthought but a native deployment path. The weights are open, the inference code is public, and the provider infrastructure already runs the quantized version as the standard offering. The same applies to GLM 5.2, whose NVFP4 version is explicitly described as optimized for agents, RAG, and commercial applications.
+
+The practical consequence is that a startup can run a model with a 256,000-token context window, competitive coding benchmarks, and agentic capability at a fraction of the cost of a proprietary frontier model — and without the architectural friction of adapting a model that was not designed for low-precision inference.
+
+The gap between the quantized version and the full version is not zero, but it is no longer large enough to justify a tenfold price difference. In many tasks, the quantized version is simply the version that runs in production.
+
+## The Real Cost of a Default
+
+The most dangerous number in an AI startup's spreadsheet is not the API cost. It is the cost of not testing alternatives.
+
+When a team defaults to a premium API, it is not merely paying more per token. It is also forgoing the experimentation that would reveal which tasks actually require that level of capability. The premium model becomes a black box that absorbs all traffic, and the team never develops the muscle of measuring whether the expense is justified.
+
+The result is a system in which the most expensive model handles the simplest tasks: formatting a JSON, summarizing a short email, extracting a field from a document. These tasks do not require frontier intelligence. They require reliability, speed, and low cost. The premium model delivers the first two but fails catastrophically on the third.
+
+A quantized open model, by contrast, forces the team to think about what they actually need. It invites measurement. It makes experimentation cheap enough that the team can afford to be wrong. And when the quantized model is insufficient — which still happens in complex reasoning, long-chain coding, and nuanced instruction following — the failure is visible, specific, and can be escalated to a premium model with a clear understanding of what the premium is buying.
+
+## The Architecture That Quantization Enables
+
+Once a quantized model becomes the default, the architecture changes in ways that compound the savings.
+
+The first change is parallelism. When each call costs a tenth of what it used to, the team can afford to run multiple models in parallel and aggregate results. A single prompt can be sent to three different quantized models, and the best answer selected by a small validator model. This ensemble approach often outperforms a single premium model at a fraction of the cost.
+
+The second change is retry economics. In an agentic workflow, failures are inevitable. A model misinterprets a tool call, generates invalid JSON, or produces a hallucinated fact. With a premium model, each retry is painful. With a quantized model, retries are cheap enough to be built into the standard flow. The agent can attempt a task three times, compare the results, and proceed with the best one — all for less than the cost of a single premium call.
+
+The third change is context abundance. The single largest factor in agentic reliability is the amount of context the model receives. With premium pricing, every token in the context window has a cost, and teams are incentivized to trim context aggressively. With quantized pricing, the incentive flips: more context is better, and the cost of providing it is negligible. The result is an agent that makes fewer mistakes because it has more information.
+
+## The Objection That No Longer Holds
+
+The most common objection to quantized models is that they are not good enough for coding. This objection is increasingly difficult to sustain.
+
+Kimi K2.7 Code, in its FP4 variant, achieves competitive scores on coding benchmarks. GLM 5.2's NVFP4 version is explicitly positioned for agentic coding tasks. The models are not theoretical; they are running on production infrastructure today, accessible through the same APIs that serve premium models.
+
+The gap that remains is in the hardest tasks: novel algorithm design, complex multi-file refactoring, and reasoning about ambiguous specifications. In these tasks, a premium model may still be necessary. But these tasks are a small fraction of the total token consumption in most startups. The remaining 80-90% of calls — code completion, test generation, documentation, simple refactoring, explanation — are handled perfectly well by quantized models.
+
+The correct strategy is not to abandon premium models. It is to reserve them for the tasks where they actually make a difference.
+
+## What a Startup Should Do on Monday
+
+There is no need to begin a major migration or create a model committee. The team needs one hundred real tasks, a small router, and enough honesty to measure the results.
+
+The tasks should represent the work that actually consumes tokens: bugs, refactors, reports, long documents, extraction, research, and tool calls. Run the current proprietary model, K2.7, GLM 5.2, and (once the weights and inference variants are available) K3. Measure completion, rework, latency, and effective cost. Do not combine every task into one attractive average; determine which model wins in each category of work. And be meticulous about it. Write everything down. Compare the results side by side. Do not trust the impression that something "seemed better" because that impression is almost always biased by the name displayed on the screen.
+
+Then change the default.
+
+The cheapest quantized model that reaches the minimum quality threshold receives the traffic. A second open model handles disagreements. Claude or GPT enters only in categories where it clearly won or in cases that failed objective validation.
+
+This policy is not anti-frontier. It opposes paying for frontier performance when frontier work is not being performed.
+
+## The Market Has Already Changed; the Habit Has Not
+
+Two years ago, selecting an expensive proprietary API as the default was defensible. Open models showed more visible gaps, inference was less mature, and integrating several model families required too much effort.
+
+In July 2026, the situation is different. K2.7 already has FP4 variants ready for providers. GLM 5.2 demonstrates that a quantized checkpoint can closely match the accuracy of a heavier version. K3 is entering the trillion-parameter class, with open weights promised within days. Multi-model platforms turn this catalog into something a team can consume without having to manage the complexity of every individual model.
+
+Anthropic and OpenAI still sell the most refined intelligence in certain categories. They charge accordingly. The problem is that startups continue buying this refined intelligence for work that requires no refinement whatsoever.
+
+A strong LLM strategy does not choose a winner and hand it every call. It uses the market against itself: open models compete for volume; proprietary models compete for the right to receive the exceptions.
+
+Claude and GPT should not disappear from the architecture. They should lose the position of default.
+
+When a quantized Kimi or GLM delivers the result, paying five, ten, or twenty times more is not prudence. It is merely an expensive preference that was never subjected to testing.
+
+---
+
+*Partnerships and projects:* contact@antoniovfranco.com

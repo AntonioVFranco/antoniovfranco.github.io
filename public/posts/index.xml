@@ -6,8 +6,50 @@
     <description>Recent content in Posts on Antonio V. Franco</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://antoniovfranco.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantized LLMs Are Phenomenal in Terms of Cost-Effectiveness (and You Should Consider Them for Your Startup)</title>
+      <link>https://antoniovfranco.com/posts/2026/quantized-llms-cost-effectiveness/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/quantized-llms-cost-effectiveness/</guid>
+      <description>Why startups should stop defaulting to premium APIs and start with quantized open models</description>
+    </item>
+    <item>
+      <title>Technical Report: A Cost-per-Correct-Answer Metric for Small Language Models</title>
+      <link>https://antoniovfranco.com/posts/2026/cost-per-correct-answer-metric-slms/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/cost-per-correct-answer-metric-slms/</guid>
+      <description>&lt;p&gt;&lt;figure style=&#34;text-align: center; margin: 1.5em 0;&#34;&gt;
+  &lt;img alt=&#34;(Antonio V. Franco)&#34; loading=&#34;lazy&#34; src=&#34;https://antoniovfranco.com/posts/2026/cost-per-correct-answer-metric-slms/cover.png&#34;&gt;
+  &lt;figcaption style=&#34;font-size: 0.85em; color: #666; margin-top: 0.5em;&#34;&gt;(Antonio V. Franco)&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;The selection of language models in production environments has historically been dominated by a single, apparently unequivocal metric: accuracy. Public leaderboards, competitions, and established benchmarks perpetuate this view by ranking models exclusively by their ability to answer a standardized set of questions or tasks correctly. In this framing, the operational cost of inference is treated as a secondary detail, often mentioned in footnotes or in technical specification sections that few consult before making an adoption decision. This approach makes sense in scenarios where the marginal processing cost is irrelevant relative to the project’s total budget, or when the evaluation is aimed exclusively at mapping the absolute frontier of a model’s intellectual capability without considering practical deployment constraints.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technical Report: Auditable Contract Screening Application Based on Natural Language Inference</title>
+      <link>https://antoniovfranco.com/posts/2026/auditable-contract-screening-nli/</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/auditable-contract-screening-nli/</guid>
+      <description>&lt;p&gt;&lt;figure style=&#34;text-align: center; margin: 1.5em 0;&#34;&gt;
+  &lt;img alt=&#34;(Antonio V. Franco)&#34; loading=&#34;lazy&#34; src=&#34;https://antoniovfranco.com/posts/2026/auditable-contract-screening-nli/cover.png&#34;&gt;
+  &lt;figcaption style=&#34;font-size: 0.85em; color: #666; margin-top: 0.5em;&#34;&gt;(Antonio V. Franco)&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Manual contract review is one of the most labor-intensive activities in legal ops, compliance, and procurement departments. Typical corporate contracts span dozens of pages, with obligations, rights, and exceptions distributed not only across numbered clauses, but also across appendices, preliminary definitions, and general provisions that mutually reference one another. Verifying whether a specific obligation — such as a maximum response time for critical incidents or the existence of a reciprocal confidentiality clause — is present, absent, or contradicted requires the reviewer to locate all potentially relevant passages and reason carefully about their combined meaning, which makes the process slow, costly, and susceptible to interpretive variation among different professionals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GLM-5.2: I thought Sonnet 4.5 and similar open models were enough, but…</title>
+      <link>https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/</link>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/</guid>
+      <description>&lt;p&gt;&lt;figure style=&#34;text-align: center; margin: 1.5em 0;&#34;&gt;
+  &lt;img alt=&#34;(Antonio V. Franco)&#34; loading=&#34;lazy&#34; src=&#34;https://antoniovfranco.com/posts/2026/glm-5-2-sonnet-4-5-and-open-models-were-enough/glm-header.png&#34;&gt;
+  &lt;figcaption style=&#34;font-size: 0.85em; color: #666; margin-top: 0.5em;&#34;&gt;(Antonio V. Franco)&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.&lt;/p&gt;
+&lt;p&gt;No, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.&lt;/p&gt;
+&lt;p&gt;I remember the launch of Sonnet 4.5 as if it were yesterday. It was one of those moments when the developer community noticed a considerable leap in quality across all existing models — and, make no mistake, the qualitative leap was undeniable. Deeper reasoning, almost human contextual understanding, truly functional code in complex projects. In my head, I said: &amp;ldquo;Damn! I do not need anything better.&amp;rdquo; And, in a way, that was not an exaggeration. Sonnet 4.5 elegantly solved problems that previously required workarounds and patches.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Agentic AI, SLMs, and Why Models Above US$0.50 Output per 1M Tokens Are Equivalent to Burning Money</title>
       <link>https://antoniovfranco.com/posts/2026/agentic-ai-slms-why-models-above-50-cents-burning-money/</link>
