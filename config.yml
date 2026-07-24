@@ -16,7 +16,7 @@ sitemap:
 params:
   env: production
   author: Antonio V. Franco
-  description: "Antonio V. Franco's personal blog about AI research, technical study, and scientific work."
+  description: "Antonio V. Franco's personal blog featuring technical studies and work on LLMs, SLMs, fine-tuning, RAG, and agents."
   keywords:
     - "AI Engineering"
     - "RAG systems"
