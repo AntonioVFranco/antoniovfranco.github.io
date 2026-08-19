@@ -1,14 +1,25 @@
-/* Minima-inspired presentation for the Hugo site. */
+/* Anthropic-inspired presentation for the Hugo site.
+   Adapted from claude.com/blog article pages:
+   - warm off-white background (#faf9f5)
+   - near-black text (#141413)
+   - serif display headings (Spectral) + sans body (Inter)
+   - centered article column (~40rem / 640px)
+   - clay accent for links (#c96442)
+   - no cover image on article pages */
+
 :root {
-  --theme: #fdfdfd;
-  --entry: #fdfdfd;
-  --primary: #111;
-  --secondary: #828282;
-  --tertiary: #e8e8e8;
-  --content: #111;
-  --border: #e8e8e8;
-  --code-bg: #eef;
+  --theme: #faf9f5;
+  --entry: #faf9f5;
+  --primary: #141413;
+  --secondary: #5e5d59;
+  --tertiary: #e8e6dc;
+  --content: #141413;
+  --border: #e8e6dc;
+  --code-bg: #f0eee6;
+  --accent: #c96442;
   --main-width: 740px;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-serif: "Spectral", Georgia, "Times New Roman", serif;
 }
 
 body,
@@ -16,12 +27,12 @@ button,
 input,
 textarea,
 select {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 400 16px/1.6 var(--font-sans);
 }
 
 body {
-  color: #111;
-  background-color: #fdfdfd;
+  color: #141413;
+  background-color: #faf9f5;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -34,7 +45,7 @@ body {
 }
 
 body.list {
-  background: #fdfdfd;
+  background: #faf9f5;
 }
 
 h1,
@@ -70,25 +81,25 @@ ol {
 }
 
 a {
-  color: #2a7ae2;
+  color: #c96442;
   text-decoration: none;
 }
 
 a:visited {
-  color: #1756a9;
+  color: #a84f33;
 }
 
 a:hover {
-  color: #111;
+  color: #141413;
   text-decoration: underline;
 }
 
 pre,
 code {
   font-size: 15px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #e8e6dc;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: #f0eee6;
 }
 
 code {
@@ -122,8 +133,8 @@ pre > code {
 }
 
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 5px solid #141413;
+  border-bottom: 1px solid #e8e6dc;
   min-height: 55.95px;
   position: relative;
 }
@@ -139,7 +150,7 @@ pre > code {
 
 .site-title,
 .site-title:visited {
-  color: #424242;
+  color: #141413;
 }
 
 .site-nav {
@@ -153,7 +164,7 @@ pre > code {
 }
 
 .site-nav .page-link {
-  color: #111;
+  color: #141413;
   line-height: 1.5;
 }
 
@@ -166,9 +177,7 @@ pre > code {
   flex: 1;
 }
 
-/* Article pages: halve the gap between site header and post title.
-   Original gap = page-content padding-top (30px) + post-header margin-top (24px) = 54px;
-   new gap = 15px + 12px = 27px (50%). */
+/* Article pages: halve the gap between site header and post title. */
 main.page-content:has(.post-single) {
   padding-top: 15px;
 }
@@ -189,7 +198,7 @@ main.page-content:has(.post-single) {
 
 .home-section-rule {
   border: 0;
-  border-top: 1px solid rgba(232, 232, 232, 0.75);
+  border-top: 1px solid rgba(232, 230, 220, 0.75);
   margin: 34px 0 28px;
 }
 
@@ -217,7 +226,7 @@ main.page-content:has(.post-single) {
 }
 
 .archive-item-date {
-  color: #828282;
+  color: #5e5d59;
   font-size: 14px;
   margin-left: 6px;
 }
@@ -226,9 +235,13 @@ main.page-content:has(.post-single) {
   content: "- ";
 }
 
+/* ============================================================
+   Article page — Anthropic-inspired
+   ============================================================ */
+
 .post-single {
-  max-width: none;
-  margin: 0;
+  max-width: 40rem; /* 640px, matches Anthropic's ~40rem article column */
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -238,32 +251,95 @@ main.page-content:has(.post-single) {
 }
 
 .post-title {
+  font-family: var(--font-serif);
   font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.post-description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5e5d59;
   margin-bottom: 15px;
 }
 
 .post-meta {
   font-size: 14px;
-  color: #828282;
+  color: #5e5d59;
 }
 
 .post-content {
-  color: #111;
+  color: #141413;
   margin-bottom: 30px;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.post-content p {
+  margin-bottom: 20px;
 }
 
 .post-content h2 {
-  font-size: 32px;
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 40px;
 }
 
 .post-content h3 {
-  font-size: 26px;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 40px;
 }
 
 .post-content h4 {
+  font-family: var(--font-serif);
   font-size: 20px;
+  font-weight: 600;
+}
+
+.post-content a {
+  color: #c96442;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post-content a:hover {
+  color: #141413;
+}
+
+.post-content blockquote {
+  margin: 30px 0;
+  padding: 8px 0 8px 24px;
+  border-left: 2px solid #e8e6dc;
+  color: #5e5d59;
+}
+
+.post-content .image-caption {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: #5e5d59;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.post-content img,
+.post-content picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.post-content figure {
+  margin: 30px 0;
+  text-align: center;
 }
 
 .post-tags,
@@ -275,7 +351,7 @@ main.page-content:has(.post-single) {
 }
 
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e6dc;
   padding: 30px 0;
 }
 
@@ -292,7 +368,7 @@ main.page-content:has(.post-single) {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #828282;
+  color: #5e5d59;
   margin-left: -15px;
 }
 
@@ -330,7 +406,7 @@ main.page-content:has(.post-single) {
   }
 
   .post-content h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .post-content h3 {
@@ -352,8 +428,8 @@ main.page-content:has(.post-single) {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #fdfdfd;
-    border: 1px solid #e8e8e8;
+    background-color: #faf9f5;
+    border: 1px solid #e8e6dc;
     border-radius: 5px;
     text-align: right;
   }
@@ -378,7 +454,7 @@ main.page-content:has(.post-single) {
   }
 
   .site-nav .menu-icon > svg {
-    fill: #424242;
+    fill: #141413;
   }
 
   .site-nav input ~ .trigger {
@@ -407,49 +483,10 @@ main.page-content:has(.post-single) {
   }
 }
 
-/* Substack-style typography with Spectral */
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-  font-family: "Spectral", Georgia, "Times New Roman", serif;
-  font-weight: 600;
-}
-
-.post-content {
-  font-family: "Spectral", Georgia, "Times New Roman", serif;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.post-content p {
-  margin-bottom: 20px;
-}
-
-.post-content .image-caption {
-  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  color: #757575;
-  text-align: center;
-  margin-top: 6px;
-}
-
-.post-content img,
-.post-content picture img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.post-content figure {
-  margin: 30px 0;
-  text-align: center;
-}
-
 /* Mobile typography: reduce article text by 1px */
 @media screen and (max-width: 600px) {
   .post-content {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 

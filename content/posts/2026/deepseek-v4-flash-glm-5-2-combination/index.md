@@ -6,8 +6,6 @@ publishDate: "2026-07-24"
 draft: false
 ---
 
-![(Antonio V. Franco)](cover.png)
-
 When I turn on my computer in the morning, one of the first things I do is open whichever Ollama Cloud account I'm currently using and check my consumption. I have three Ollama Cloud accounts, each on the US$20 plan, which gives me considerably more peace of mind regarding usage, even though I still can't afford to consume resources recklessly.
 
 Ollama Cloud's billing model isn't based solely on the number of tokens you use, but also on how demanding a model is in terms of GPU resources. In practice, this means I can get significantly more work done with GLM-5.2 (classified as "High" usage) than with DeepSeek V4 Pro (classified as "Extra High" usage).

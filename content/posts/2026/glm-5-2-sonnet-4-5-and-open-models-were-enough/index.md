@@ -5,8 +5,6 @@ publishDate: "2026-06-25"
 draft: false
 ---
 
-![(Antonio V. Franco)](glm-header.png)
-
 Honestly, it had been a long time since a model surprised me like this — not since the end of 2025.
 
 No, I do not mean it surprised me because I liked a response or was impressed by a benchmark. No, and in this article you will understand where I am going with this.

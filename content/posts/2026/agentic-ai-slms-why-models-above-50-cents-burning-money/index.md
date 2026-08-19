@@ -6,8 +6,6 @@ publishDate: "2026-06-13"
 draft: false
 ---
 
-![(Antonio V. Franco)](agentic-ai-header.png)
-
 June 2026. If you are still paying more than fifty cents per million output tokens in any agentic pipeline, forgive my frankness: you are literally burning money. No, this is not an exaggeration on my part, but simply the relationship between API costs and absurd usage — because, indeed, LLMs should be used absurdly, whether you are a solo researcher like me or a startup. And here, the reason has a name, surname, and version: DeepSeek V4 Flash. And what it represents goes far beyond excellent benchmark results — it represents the consolidation of a trend that demonetizes the already psychologically consolidated commercial models and pushes the center of gravity toward SLMs, the highly specialized Small Language Models.
 
 I have been monitoring price-per-token curves since the time when we thought it was normal to use a model like GPT-4o, which, by the way, was the first major model I used. With every Claude model released, I have been monitoring the relationship between token cost and benchmark performance, and comparing it with Chinese models. In an academic and professional context where we seek to maximize the efficiency of our activities — whatever they may be — we tend to be drawn toward what feels like magic: the DeepSeek V4 line.
