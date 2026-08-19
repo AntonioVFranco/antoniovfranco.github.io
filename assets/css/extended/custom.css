@@ -4,7 +4,7 @@
    - near-black text (#141413)
    - serif display headings (Spectral) + sans body (Inter)
    - centered article column (~40rem / 640px)
-   - clay accent for links (#c96442)
+   - default link color (blue)
    - no cover image on article pages */
 
 :root {
@@ -16,7 +16,6 @@
   --content: #141413;
   --border: #e8e6dc;
   --code-bg: #f0eee6;
-  --accent: #c96442;
   --main-width: 740px;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-serif: "Spectral", Georgia, "Times New Roman", serif;
@@ -81,16 +80,16 @@ ol {
 }
 
 a {
-  color: #c96442;
+  color: #2a7ae2;
   text-decoration: none;
 }
 
 a:visited {
-  color: #a84f33;
+  color: #1756a9;
 }
 
 a:hover {
-  color: #141413;
+  color: #111;
   text-decoration: underline;
 }
 
@@ -304,13 +303,13 @@ main.page-content:has(.post-single) {
 }
 
 .post-content a {
-  color: #c96442;
+  color: #2a7ae2;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .post-content a:hover {
-  color: #141413;
+  color: #111;
 }
 
 .post-content blockquote {
