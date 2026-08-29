@@ -311,7 +311,7 @@ body.post-page .page-content {
 }
 
 .post-editorial-bar-inner {
-  max-width: 1080px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 16px 24px;
   display: flex;
@@ -606,8 +606,12 @@ body.post-page .page-content {
   .post-editorial-bar-inner {
     padding: 14px 0;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
+  }
+
+  .post-byline {
+    text-align: center;
   }
 
   .post-content {
