@@ -1,24 +1,22 @@
-/* Anthropic-inspired presentation for the Hugo site.
-   Adapted from claude.com/blog article pages:
-   - warm off-white background (#faf9f5)
-   - near-black text (#141413)
-   - serif display headings (Spectral) + sans body (Inter)
-   - centered article column (~40rem / 640px)
-   - default link color (blue)
-   - no cover image on article pages */
+/* Editorial presentation for the Hugo site.
+   Article pages follow an OpenAI-style editorial composition:
+   - light theme (white / near-black text)
+   - wide hero (title + metadata) clearly separated from the body
+   - thin editorial rule + byline/share bar between hero and content
+   - narrow, centered reading column for the body
+   - sans-serif typography throughout (Inter) */
 
 :root {
-  --theme: #faf9f5;
-  --entry: #faf9f5;
-  --primary: #141413;
-  --secondary: #5e5d59;
-  --tertiary: #e8e6dc;
-  --content: #141413;
-  --border: #e8e6dc;
-  --code-bg: #f0eee6;
+  --theme: #ffffff;
+  --entry: #ffffff;
+  --primary: #111111;
+  --secondary: #6b6b6b;
+  --tertiary: #e6e6e6;
+  --content: #111111;
+  --border: #e6e6e6;
+  --code-bg: #f5f5f5;
   --main-width: 740px;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-serif: "Spectral", Georgia, "Times New Roman", serif;
 }
 
 body,
@@ -30,8 +28,8 @@ select {
 }
 
 body {
-  color: #141413;
-  background-color: #faf9f5;
+  color: #111111;
+  background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -44,7 +42,7 @@ body {
 }
 
 body.list {
-  background: #faf9f5;
+  background: #ffffff;
 }
 
 h1,
@@ -70,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 ul,
@@ -96,9 +94,9 @@ a:hover {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid #e8e6dc;
+  border: 1px solid #e6e6e6;
   border-radius: 3px;
-  background-color: #f0eee6;
+  background-color: #f5f5f5;
 }
 
 code {
@@ -132,8 +130,8 @@ pre > code {
 }
 
 .site-header {
-  border-top: 5px solid #141413;
-  border-bottom: 1px solid #e8e6dc;
+  border-top: 5px solid #111111;
+  border-bottom: 1px solid #e6e6e6;
   min-height: 55.95px;
   position: relative;
 }
@@ -149,7 +147,7 @@ pre > code {
 
 .site-title,
 .site-title:visited {
-  color: #141413;
+  color: #111111;
 }
 
 .site-nav {
@@ -163,7 +161,7 @@ pre > code {
 }
 
 .site-nav .page-link {
-  color: #141413;
+  color: #111111;
   line-height: 1.5;
 }
 
@@ -176,7 +174,7 @@ pre > code {
   flex: 1;
 }
 
-/* Article pages: halve the gap between site header and post title. */
+/* Article pages: halve the gap between site header and post hero. */
 main.page-content:has(.post-single) {
   padding-top: 15px;
 }
@@ -197,7 +195,7 @@ main.page-content:has(.post-single) {
 
 .home-section-rule {
   border: 0;
-  border-top: 1px solid rgba(232, 230, 220, 0.75);
+  border-top: 1px solid rgba(230, 230, 230, 0.75);
   margin: 34px 0 28px;
 }
 
@@ -225,7 +223,7 @@ main.page-content:has(.post-single) {
 }
 
 .archive-item-date {
-  color: #5e5d59;
+  color: #6b6b6b;
   font-size: 14px;
   margin-left: 6px;
 }
@@ -235,46 +233,136 @@ main.page-content:has(.post-single) {
 }
 
 /* ============================================================
-   Article page — Anthropic-inspired
+   Article page — OpenAI-style editorial composition
    ============================================================ */
 
+/* Wide page container for article pages. */
+body.post-page .wrapper {
+  max-width: 1160px;
+}
+
+body.post-page .page-content {
+  padding-top: 15px;
+}
+
+/* Hero: wide, centered, clearly separated from the body. */
 .post-single {
-  max-width: 40rem; /* 640px, matches Anthropic's ~40rem article column */
+  max-width: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.post-header {
-  margin-top: 12px;
-  margin-bottom: 30px;
+.post-hero {
+  width: 100%;
+  padding: 48px 0 0;
 }
 
-.post-title {
-  font-family: var(--font-serif);
-  font-size: 42px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  line-height: 1.2;
-  margin-bottom: 15px;
+.post-hero-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
 }
 
-.post-description {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #5e5d59;
-  margin-bottom: 15px;
-}
-
-.post-meta {
+/* Compact metadata line above the title. */
+.post-meta-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
   font-size: 14px;
-  color: #5e5d59;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
 }
 
-.post-content {
-  color: #141413;
-  margin-bottom: 30px;
+.post-category {
+  font-weight: 500;
+  color: #111111;
+}
+
+.post-meta-sep {
+  color: #b0b0b0;
+}
+
+.post-date {
+  color: #6b6b6b;
+}
+
+/* Large, centered, sans-serif editorial title. */
+.post-title {
   font-family: var(--font-sans);
-  font-size: 17px;
+  font-size: clamp(2.25rem, 5.5vw, 5rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  color: #111111;
+}
+
+/* Editorial rule + byline/share bar between hero and body. */
+.post-editorial-bar {
+  width: 100%;
+  margin: 56px 0 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+.post-editorial-bar-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.post-byline {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.post-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: #111111;
+  background: transparent;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.post-share:hover {
+  background-color: #f5f5f5;
+  border-color: #b0b0b0;
+}
+
+.post-share:focus-visible {
+  outline: 2px solid #2a7ae2;
+  outline-offset: 2px;
+}
+
+.post-share svg {
+  flex-shrink: 0;
+}
+
+/* Body: narrow, centered reading column. */
+.post-content {
+  max-width: 720px;
+  margin: 40px auto 30px;
+  padding: 0 24px;
+  color: #111111;
+  font-family: var(--font-sans);
+  font-size: 18px;
   line-height: 1.7;
 }
 
@@ -283,22 +371,24 @@ main.page-content:has(.post-single) {
 }
 
 .post-content h2 {
-  font-family: var(--font-serif);
-  font-size: 30px;
+  font-family: var(--font-sans);
+  font-size: 28px;
   font-weight: 600;
+  letter-spacing: -0.01em;
   margin-top: 40px;
 }
 
 .post-content h3 {
-  font-family: var(--font-serif);
-  font-size: 24px;
+  font-family: var(--font-sans);
+  font-size: 22px;
   font-weight: 600;
+  letter-spacing: -0.01em;
   margin-top: 40px;
 }
 
 .post-content h4 {
-  font-family: var(--font-serif);
-  font-size: 20px;
+  font-family: var(--font-sans);
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -315,14 +405,14 @@ main.page-content:has(.post-single) {
 .post-content blockquote {
   margin: 30px 0;
   padding: 8px 0 8px 24px;
-  border-left: 2px solid #e8e6dc;
-  color: #5e5d59;
+  border-left: 2px solid #e6e6e6;
+  color: #6b6b6b;
 }
 
 .post-content .image-caption {
   font-family: var(--font-sans);
   font-size: 13px;
-  color: #5e5d59;
+  color: #6b6b6b;
   text-align: center;
   margin-top: 6px;
 }
@@ -341,6 +431,11 @@ main.page-content:has(.post-single) {
   text-align: center;
 }
 
+/* Editorial images may exceed the reading column up to the wide container. */
+.post-content figure img {
+  max-width: 100%;
+}
+
 .post-tags,
 .paginav,
 .breadcrumbs,
@@ -350,7 +445,7 @@ main.page-content:has(.post-single) {
 }
 
 .site-footer {
-  border-top: 1px solid #e8e6dc;
+  border-top: 1px solid #e6e6e6;
   padding: 30px 0;
 }
 
@@ -367,7 +462,7 @@ main.page-content:has(.post-single) {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #5e5d59;
+  color: #6b6b6b;
   margin-left: -15px;
 }
 
@@ -400,16 +495,12 @@ main.page-content:has(.post-single) {
     padding-left: 15px;
   }
 
-  .post-title {
-    font-size: 36px;
-  }
-
   .post-content h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .post-content h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .footer-col-1,
@@ -427,8 +518,8 @@ main.page-content:has(.post-single) {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #faf9f5;
-    border: 1px solid #e8e6dc;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
     border-radius: 5px;
     text-align: right;
   }
@@ -453,7 +544,7 @@ main.page-content:has(.post-single) {
   }
 
   .site-nav .menu-icon > svg {
-    fill: #141413;
+    fill: #111111;
   }
 
   .site-nav input ~ .trigger {
@@ -482,15 +573,47 @@ main.page-content:has(.post-single) {
   }
 }
 
-/* Mobile typography: reduce article text by 1px */
+/* Mobile article layout: deliberate, controlled. */
 @media screen and (max-width: 600px) {
-  .post-content {
-    font-size: 15px;
+  body.post-page .wrapper {
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
   }
-}
 
-@media screen and (max-width: 600px) {
+  .post-hero {
+    padding: 32px 0 0;
+  }
+
+  .post-hero-inner {
+    padding: 0;
+  }
+
   .post-title {
-    font-size: 34px;
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+    line-height: 1.08;
+  }
+
+  .post-meta-line {
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .post-editorial-bar {
+    margin: 40px 0 0;
+  }
+
+  .post-editorial-bar-inner {
+    padding: 14px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .post-content {
+    max-width: 100%;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.7;
   }
 }
