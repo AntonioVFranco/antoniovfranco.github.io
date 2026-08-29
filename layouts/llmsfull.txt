@@ -1,0 +1,30 @@
+{{- /* ===== llms-full.txt — automated from published content ===== */ -}}
+# Antonio V. Franco — Full Article Archive
+
+Antonio V. Franco is an AI engineer and independent researcher. This blog publishes first-hand technical work on LLMs, SLMs, open-source models, fine-tuning, distillation, agentic AI, and practical model stack decisions.
+
+Canonical: https://antoniovfranco.com/
+Sitemap: {{ "sitemap.xml" | absURL }}
+RSS: {{ "index.xml" | absURL }}
+
+{{- $posts := where (where site.RegularPages "Section" "posts") "Draft" false }}
+{{- $published := $posts.ByDate.Reverse }}
+{{- range $published }}
+
+============================================================
+ARTICLE
+============================================================
+URL: {{ .Permalink }}
+Title: {{ .Title }}
+Date: {{ .Date.Format "2006-01-02" }}
+Description: {{ .Description }}
+Topics: {{ delimit (.Params.seoTopics | default slice) ", " }}
+Author: {{ site.Params.author }}
+============================================================
+
+{{ .Plain | htmlUnescape }}
+
+============================================================
+END OF ARTICLE
+============================================================
+{{- end }}

@@ -5,8 +5,29 @@ theme: [PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
+# No taxonomy kinds: avoids empty /categories/ and /tags/ orphan list pages.
+disableKinds:
+  - taxonomy
+  - term
 pagination:
   pagerSize: 100
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - LLMS
+    - LLMSFull
+
+outputFormats:
+  LLMS:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+  LLMSFull:
+    mediaType: text/plain
+    baseName: llms-full
+    isPlainText: true
 
 sitemap:
   changefreq: weekly
@@ -16,22 +37,20 @@ sitemap:
 params:
   env: production
   author: Antonio V. Franco
+  authorName: "Antonio V. Franco"
+  authorEmail: "contact@antoniovfranco.com"
+  twitterCreator: "@AntonioVFranco"
+  person:
+    "@id": "https://antoniovfranco.com/#author"
+    name: "Antonio V. Franco"
+    url: "https://antoniovfranco.com/"
+    description: "AI engineer and independent researcher focused on LLMs, SLMs, fine-tuning, distillation, RAG, and agentic systems."
+    sameAs:
+      - "https://github.com/AntonioVFranco"
+      - "https://x.com/AntonioVFranco"
+      - "https://www.linkedin.com/in/antoniovfranco/"
+      - "https://huggingface.co/AntonioVFranco"
   description: "Antonio V. Franco's personal blog featuring technical studies and work on LLMs, SLMs, fine-tuning, RAG, and agents."
-  keywords:
-    - "AI Engineering"
-    - "RAG systems"
-    - "LLM benchmarks"
-    - "open source AI"
-    - "retrieval augmented generation"
-    - "AI research"
-    - "machine learning"
-    - "data sovereignty"
-    - "production AI systems"
-    - "AI agents"
-    - "LLM fine-tuning"
-    - "GPU infrastructure"
-    - "RunPod"
-    - "AI cost optimization"
   DateFormat: "January 2006"
   defaultTheme: light
   disableThemeToggle: true
@@ -75,6 +94,7 @@ params:
       SiteVerificationTag: ""
   label:
     text: "Antonio V. Franco"
+  ShowFullTextinRSS: true
 
 services:
   googleAnalytics:

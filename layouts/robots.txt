@@ -1,0 +1,15 @@
+# Allow all well-behaved crawlers (public content). No blocking of search/answer engines.
+User-agent: *
+Disallow:
+
+# LLM / answer-engine crawlers that must have access for maximum exposure.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}

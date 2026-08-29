@@ -1,0 +1,31 @@
+{{- /* ===== llms.txt — automated from published content ===== */ -}}
+# Antonio V. Franco
+
+Antonio V. Franco is an AI engineer and independent researcher. This blog publishes first-hand technical work on LLMs, SLMs, open-source models, fine-tuning, distillation, agentic AI, pricing/cost analysis, and practical model stack decisions. Articles are written from real testing and real workloads, not from press releases.
+
+Canonical: https://antoniovfranco.com/
+
+## Scope
+
+- Agentic AI and Small Language Models (SLMs)
+- Open-source vs. closed model evaluation
+- Model pricing and cost-per-token analysis
+- LLM fine-tuning and distillation tooling
+- Practical AI stacks for independent researchers and startups
+
+## Articles
+
+{{- $posts := where (where site.RegularPages "Section" "posts") "Draft" false }}
+{{- $published := $posts.ByDate.Reverse }}
+{{- range $published }}
+- Title: {{ .Title }}
+  URL: {{ .Permalink }}
+  Date: {{ .Date.Format "2006-01-02" }}
+  Description: {{ .Description }}
+  Topics: {{ delimit (.Params.seoTopics | default slice) ", " }}
+{{- end }}
+
+## Feeds
+
+- Sitemap: {{ "sitemap.xml" | absURL }}
+- RSS: {{ "index.xml" | absURL }}

@@ -1,0 +1,41 @@
+{{- $twitterImage := "" }}
+{{- with partial "templates/_funcs/get-page-images" . }}
+  {{- with index . 0 }}{{ $twitterImage = .Permalink }}{{ end }}
+{{- else }}
+  {{- if .Params.cover.image }}
+    {{- $twitterImage = (path.Join .RelPermalink .Params.cover.image) | absURL }}
+  {{- end }}
+{{- end }}
+
+{{- if $twitterImage }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ $twitterImage }}">
+{{- if .IsPage }}
+<meta name="twitter:image:alt" content="{{ with .Params.socialImageAlt }}{{ . | plainify }}{{ else }}{{ .Title | plainify }}{{ end }}">
+{{- end }}
+{{- else }}
+<meta name="twitter:card" content="summary">
+{{- end }}
+
+{{- with or .Title site.Title site.Params.title | plainify }}
+<meta name="twitter:title" content="{{ . }}">
+{{- end }}
+
+{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape }}
+<meta name="twitter:description" content="{{ trim . "\n\r\t " }}">
+{{- end }}
+
+{{- with site.Params.twitterCreator }}
+<meta name="twitter:creator" content="{{ . }}">
+{{- end }}
+{{- with site.Params.social }}
+{{- if reflect.IsMap . }}
+{{- with .twitter }}
+{{- $content := . }}
+{{- if not (strings.HasPrefix . "@") }}
+{{- $content = printf "@%v" . }}
+{{- end }}
+<meta name="twitter:site" content="{{ $content }}">
+{{- end }}
+{{- end }}
+{{- end }}

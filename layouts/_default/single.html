@@ -34,7 +34,7 @@
 
   <div class="post-editorial-bar" aria-label="Article actions">
     <div class="post-editorial-bar-inner">
-      <span class="post-byline">{{ site.Params.author }} · {{ .ReadingTime }} min read</span>
+      <span class="post-byline"><a href="{{ site.Home.Permalink }}" rel="author">{{ site.Params.author }}</a> · {{ .ReadingTime }} min read</span>
       <button type="button" class="post-share" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="18" cy="5" r="3"></circle>
