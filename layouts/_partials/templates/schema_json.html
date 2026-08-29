@@ -82,7 +82,7 @@
       "@type" "BlogPosting"
       "@id" (printf "%s#article" .Permalink)
       "url" .Permalink
-      "headline" (.Params.seoTitle | default .Title)
+      "headline" .Title
       "name" .Title
       "description" .Description
       "datePublished" (.PublishDate.Format "2006-01-02T15:04:05-07:00")
@@ -116,7 +116,9 @@
 
   {{- $graph := slice }}
   {{- $graph = $graph | append $webPage }}
-  {{- $graph = $graph | append $posting }}
+  {{- if and .IsPage (eq .Section "posts") }}
+    {{- $graph = $graph | append $posting }}
+  {{- end }}
   {{- $graph = $graph | append $person }}
   {{- $graph = dict "@context" "https://schema.org" "@graph" $graph }}
   <script type="application/ld+json">{{ jsonify $graph | safeJS }}</script>

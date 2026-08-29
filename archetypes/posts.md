@@ -11,8 +11,6 @@ seoTopics:
 entities:
   - name: ""
     url: ""
-sources:
-  - ""
 images:
   - ""
 socialImageAlt: ""
