@@ -1,7 +1,7 @@
 ---
-title: "QDoRA Explained: The New PEFT Standard for 2025"
-seoTitle: "QDoRA Explained: The New PEFT Standard for 2025"
-description: "The landscape of parameter-efficient fine-tuning has been going through a quiet revolution since 2021, and most people haven’t noticed yet. While LoRA democ…"
+title: "QDoRA Explained: Why It Became the New PEFT Standard in 2025"
+seoTitle: "QDoRA Explained: Why It Became the New PEFT Standard in 2025"
+description: "QDoRA combines DoRA’s weight decomposition with 4-bit quantization for memory-efficient LLM fine-tuning. Learn the mathematics, implementation, and trade-offs."
 date: "2025-11-11"
 publishDate: "2025-11-11"
 lastmod: "2025-11-11"

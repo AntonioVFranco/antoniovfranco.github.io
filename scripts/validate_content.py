@@ -22,6 +22,7 @@ Checks per published post:
 
 Dependencies: PyYAML (`pip install pyyaml`).
 """
+import html as htmllib
 import json
 import re
 import sys
@@ -59,6 +60,32 @@ GHOST_URLS = [
     "/posts/2026/auditable-contract-screening-nli/",
 ]
 
+# Legacy slugs whose published description predates the strict description
+# rules. The exemption is allowed ONLY while the current description equals the
+# exact legacy value recorded here: an exception applies to exactly one aspect
+# (agentic = length 206; deepseek = missing final punctuation). If the value is
+# ever changed, ALL new rules apply normally. glm-5-2 and QDoRA comply already
+# and need no exception.
+LEGACY_DESCRIPTIONS = {
+    "agentic-ai-slms-why-models-above-50-cents-burning-money": {
+        "value": "A first-hand look at why DeepSeek V4 Flash and Qwen3-Coder-Next make anything above US$0.50 per million output tokens a waste of money in agentic pipelines, and why SLMs are the future of industrial agents.",
+        "exempt": {"length"},
+    },
+    "deepseek-v4-flash-glm-5-2-combination": {
+        "value": "Why DeepSeek V4 Flash handles 70% of my workload and GLM-5.2 covers the rest — a practical AI stack for serious development work",
+        "exempt": {"final_punctuation"},
+    },
+}
+
+
+def legacy_exemptions_for(slug: str, desc: str) -> set:
+    """Return the set of exempt checks IF the slug's current description exactly
+    matches its recorded legacy value. Otherwise returns empty (all rules apply)."""
+    entry = LEGACY_DESCRIPTIONS.get(slug)
+    if entry and desc.strip() == entry["value"]:
+        return set(entry.get("exempt", []))
+    return set()
+
 errors: list[str] = []
 
 
@@ -71,6 +98,17 @@ def load(path: Path) -> str:
         return path.read_text()
     except FileNotFoundError:
         return ""
+
+
+def html_unescape_full(s: str) -> str:
+    """Repeatedly HTML-unescape until stable (handles double-encoded entities
+    such as '&amp;#39;' that can appear in XML/RSS descriptions)."""
+    prev = None
+    cur = s
+    while cur != prev:
+        prev = cur
+        cur = htmllib.unescape(cur)
+    return cur
 
 
 def split_front_matter(text: str):
@@ -135,6 +173,26 @@ def main() -> int:
             if req not in fm or fm.get(req) in (None, ""):
                 err(f"{slug}: missing front matter '{req}'")
 
+        # --- description quality (block truncated/elliptical descriptions) ---
+        desc = fm.get("description")
+        if isinstance(desc, str) and desc:
+            strip = desc.rstrip()
+            exempt = legacy_exemptions_for(slug, desc)
+            if "length" not in exempt and not (110 <= len(strip) <= 170):
+                err(f"{slug}: description length {len(strip)} not in [110, 170]")
+            if "final_punctuation" not in exempt and strip[-1] not in ".!?":
+                err(f"{slug}: description must end with '.', '!' or '?'")
+            if strip.endswith("…") or strip.endswith("..."):
+                err(f"{slug}: description must not end with ellipsis")
+            if "…" in strip:
+                err(f"{slug}: description contains ellipsis character '…'")
+            # fragment cut-off: the sentence (minus closing punctuation) must end
+            # on a real word character, not a truncated/mid-word fragment.
+            core = strip.rstrip(".!?").rstrip()
+            if not core or not core[-1].isalnum():
+                err(f"{slug}: description ends on a truncated fragment")
+
+
         # seoTopics must be a specific list field (not confused with sources/entities/images)
         if not isinstance(fm.get("seoTopics"), list) or not fm["seoTopics"]:
             err(f"{slug}: seoTopics missing or not a non-empty list")
@@ -198,6 +256,22 @@ def main() -> int:
         if html.count('rel="canonical"') + html.count("rel=canonical") != 1:
             err(f"{slug}: canonical not unique")
 
+        # --- description in generated metadata must match front matter exactly ---
+        if isinstance(desc, str) and desc:
+            def meta_content(pattern):
+                m = re.search(pattern, html, re.I)
+                return m.group(1) if m else None
+            want = desc.strip()
+            got = meta_content(r'name=["\']?description["\']?\s+content=["\']?([^">]+)')
+            if got is None or got.strip() != want:
+                err(f"{slug}: <meta name=description> != front matter description")
+            got = meta_content(r'property=["\']?og:description["\']?\s+content=["\']?([^">]+)')
+            if got is None or got.strip() != want:
+                err(f"{slug}: og:description != front matter description")
+            got = meta_content(r'name=["\']?twitter:description["\']?\s+content=["\']?([^">]+)')
+            if got is None or got.strip() != want:
+                err(f"{slug}: twitter:description != front matter description")
+
         # --- JSON-LD ---
         blocks = re.findall(r'<script type=["\']?application/ld\+json["\']?>(.*?)</script>', html, re.S)
         if not blocks:
@@ -229,6 +303,11 @@ def main() -> int:
                             err(f"{slug}: BlogPosting.headline != .Title")
                         if node.get("name") != fm.get("title"):
                             err(f"{slug}: BlogPosting.name != .Title")
+                        if isinstance(desc, str) and desc and node.get("description") != desc.strip():
+                            err(f"{slug}: BlogPosting.description != front matter description")
+                    if isinstance(node, dict) and node.get("@type") == "WebPage":
+                        if isinstance(desc, str) and desc and node.get("description") != desc.strip():
+                            err(f"{slug}: WebPage.description != front matter description")
 
         # --- presence in artifacts ---
         if url not in sitemap:
@@ -239,6 +318,25 @@ def main() -> int:
             err(f"{slug}: not in llms.txt")
         if url not in llmsfull:
             err(f"{slug}: not in llms-full.txt")
+
+        # RSS item description must match front matter description
+        if isinstance(desc, str) and desc:
+            m = re.search(
+                rf'<item>.*?<link>{re.escape(url)}</link>.*?<description>(.*?)</description>',
+                rss, re.S)
+            if not (m and html_unescape_full(m.group(1)).strip() == desc.strip()):
+                err(f"{slug}: RSS item description != front matter description")
+            # llms.txt description line, when present
+            llms_desc_ok = bool(re.search(
+                rf"URL: {re.escape(url)}\s*\n\s*Date:.*?\n\s*Description: ({re.escape(desc.strip())})",
+                llms, re.S))
+            if not llms_desc_ok:
+                err(f"{slug}: llms.txt description != front matter description")
+            llmsfull_desc_ok = bool(re.search(
+                rf"URL: {re.escape(url)}\s*\n\s*Title:.*?\n\s*Date:.*?\n\s*Description: ({re.escape(desc.strip())})",
+                llmsfull, re.S))
+            if not llmsfull_desc_ok:
+                err(f"{slug}: llms-full.txt description != front matter description")
 
         # --- internal links resolve (does NOT require new links) ---
         for href in re.findall(r'href="(/[^"]*)"', html):
