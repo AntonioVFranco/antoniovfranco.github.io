@@ -20,6 +20,7 @@ entities:
     url: "https://huggingface.co/docs/transformers"
 images:
   - "og-image.png"
+socialImageSource: "cover.png"
 socialImageAlt: "Quantizing an LLM is not enough: proving a 4-bit model still deserves to go into production"
 ---
 ![](cover.png)
