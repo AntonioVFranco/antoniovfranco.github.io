@@ -137,6 +137,29 @@ def resolve_bundle_source(post_dir: Path, name: str) -> Path | None:
     return candidate
 
 
+def resolve_bundle_output(post_dir: Path, name: str | None, default: str) -> Path | None:
+    """Resolve the social image OUTPUT filename inside the page bundle.
+
+    Enforces the same confinement as `resolve_bundle_source` (no path
+    traversal, no absolute paths, must stay inside the bundle) plus a `.png`
+    extension requirement. Falls back to `default` when `name` is empty."""
+    if not name:
+        name = default
+    if not isinstance(name, str) or not name.strip():
+        return None
+    name = name.strip()
+    base = Path(name)
+    if base.is_absolute() or ".." in base.parts:
+        return None
+    if base.suffix.lower() != ".png":
+        return None
+    bundle = post_dir.resolve()
+    candidate = (post_dir / name).resolve()
+    if not candidate.is_relative_to(bundle):
+        return None
+    return candidate
+
+
 def open_photo_composited(src: Path) -> Image.Image:
     """Open an image and composite any alpha channel over a white background,
     returning an opaque RGB image (ready for fit/crop)."""
@@ -150,34 +173,41 @@ def open_photo_composited(src: Path) -> Image.Image:
     return composited.convert("RGB")
 
 
-def generate_photo_card(post_dir: Path, source: str) -> bool:
-    """Create a 1200x630 RGB og-image.png from the bundle image `source`.
+def generate_photo_card(post_dir: Path, source: str, output: str | None) -> Path | None:
+    """Create a 1200x630 RGB social PNG from the bundle image `source`.
 
-    Uses ImageOps.fit with LANCZOS and a central crop; adds no text.
+    Uses ImageOps.fit with LANCZOS and a central crop; adds no text. Writes to
+    `output` (defaults to og-image.png) and returns the produced path, or None
+    on failure.
     """
     src = resolve_bundle_source(post_dir, source)
     if src is None or not src.exists():
         print(f"  !! {post_dir.name}: socialImageSource '{source}' not found/safe, skipping")
-        return False
+        return None
+    out = resolve_bundle_output(post_dir, output, "og-image.png")
+    if out is None:
+        print(f"  !! {post_dir.name}: socialImageOutput '{output}' invalid "
+              f"(must be a relative .png inside the page bundle), skipping")
+        return None
     photo = open_photo_composited(src)
     fitted = ImageOps.fit(
         photo, (WIDTH, HEIGHT), Image.Resampling.LANCZOS, centering=(0.5, 0.5)
     )
-    out = post_dir / "og-image.png"
     fitted.convert("RGB").save(out, "PNG")
-    return True
+    return out
 
 
-def generate(post_dir: Path) -> bool:
+def generate(post_dir: Path) -> Path | None:
+    """Generate the social image for one post and return its produced path."""
     md = post_dir / "index.md"
     if not md.exists():
-        return False
+        return None
     fm = read_front_matter(md)
     title = read_title_legacy(md) or post_dir.name.replace("-", " ").title()
 
     social_source = fm.get("socialImageSource")
     if social_source:
-        return generate_photo_card(post_dir, str(social_source))
+        return generate_photo_card(post_dir, str(social_source), fm.get("socialImageOutput"))
 
     img = Image.new("RGB", (WIDTH, HEIGHT), BG)
     draw = ImageDraw.Draw(img)
@@ -206,7 +236,7 @@ def generate(post_dir: Path) -> bool:
 
     out = post_dir / "og-image.png"
     img.save(out, "PNG")
-    return True
+    return out
 
 
 def main() -> int:
@@ -216,8 +246,8 @@ def main() -> int:
         return 1
     for post_dir in sorted(CONTENT.rglob("index.md")):
         d = post_dir.parent
-        if generate(d):
-            out = d / "og-image.png"
+        out = generate(d)
+        if out is not None:
             print(f"generated {out.relative_to(ROOT)}")
             count += 1
     print(f"Done. {count} social image(s).")
