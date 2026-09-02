@@ -50,7 +50,7 @@ params:
       - "https://x.com/AntonioVFranco"
       - "https://www.linkedin.com/in/antoniovfranco/"
       - "https://huggingface.co/AntonioVFranco"
-  description: "Antonio V. Franco's personal blog featuring technical studies and work on LLMs, SLMs, fine-tuning, RAG, and agents."
+  description: "Antonio V. Franco's personal blog featuring technical work on LLMs & SLMs, quantization, and fine-tuning."
   DateFormat: "January 2006"
   defaultTheme: light
   disableThemeToggle: true
