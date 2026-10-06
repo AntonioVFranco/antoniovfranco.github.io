@@ -104,36 +104,36 @@ the difference flux started at lower values, passed through a high state
 around MJD 61090 to 61105, and then returned to much lower values in the
 late observations.
 
-![Caption. Difference flux in the g band of the exploratory object used before the classification stage.](1.png)
+![Difference flux in the g band of the exploratory object used before the classification stage.](1.png)
 
-Caption. Difference flux in the g band of the exploratory object used
+Difference flux in the g band of the exploratory object used
 before the classification stage.
 
-![Caption. Difference flux in the i band. The only negative measurement in this set appears in this band.](2.png)
+![Difference flux in the i band. The only negative measurement in this set appears in this band.](2.png)
 
-Caption. Difference flux in the i band. The only negative measurement in
+Difference flux in the i band. The only negative measurement in
 this set appears in this band.
 
-![Caption. Difference flux in the r band, which also contained the object's highest absolute SNR value.](3.png)
+![Difference flux in the r band, which also contained the object's highest absolute SNR value.](3.png)
 
-Caption. Difference flux in the r band, which also contained the
+Difference flux in the r band, which also contained the
 object's highest absolute SNR value.
 
-![Caption. Difference flux in the z band over the same observed interval.](4.png)
+![Difference flux in the z band over the same observed interval.](4.png)
 
-Caption. Difference flux in the z band over the same observed interval.
+Difference flux in the z band over the same observed interval.
 
 The median difference flux values differed across bands. The z band had
 the highest median, but that did not mean it had the cleanest signal.
 The highest median SNR appeared in r.
 
-![Caption. SNR distribution by band in the exploratory object.](5.png)
+![SNR distribution by band in the exploratory object.](5.png)
 
-Caption. SNR distribution by band in the exploratory object.
+SNR distribution by band in the exploratory object.
 
-![Caption. Distribution of flux error by band. The uncertainty changes considerably across filters and affects how the SNR is interpreted.](6.png)
+![Distribution of flux error by band. The uncertainty changes considerably across filters and affects how the SNR is interpreted.](6.png)
 
-Caption. Distribution of flux error by band. The uncertainty changes
+Distribution of flux error by band. The uncertainty changes
 considerably across filters and affects how the SNR is interpreted.
 
 This first object also had a single measurement with negative difference
@@ -223,9 +223,9 @@ would not be simple. The observed duration had substantial overlap
 between the classes, while the SNR-related variables were strongly
 correlated with one another.
 
-![Caption. Distribution of the six variables by class in the final dataset of 24 objects.](7.png)
+![Distribution of the six variables by class in the final dataset of 24 objects.](7.png)
 
-Caption. Distribution of the six variables by class in the final dataset
+Distribution of the six variables by class in the final dataset
 of 24 objects.
 
 The fraction of negative measurements also had many zeros. The peak
@@ -233,17 +233,17 @@ position, meanwhile, occupied almost the entire possible range. None of
 these variables appeared to provide a simple separation between SN Ia
 and SN II.
 
-![Caption. Spearman correlation among the variables used in the models.](8.png)
+![Spearman correlation among the variables used in the models.](8.png)
 
-Caption. Spearman correlation among the variables used in the models.
+Spearman correlation among the variables used in the models.
 
 One object stood out in the SNR-related variables. diaObject
 170028527544959074 was a very extreme SN II compared with the rest of
 the dataset.
 
-![Caption. Relationship among the SNR-related variables. The extreme object that would later produce the logistic regression's strongest error already appears outside the group's usual pattern.](9.png)
+![Relationship among the SNR-related variables. The extreme object that would later produce the logistic regression's strongest error already appears outside the group's usual pattern.](9.png)
 
-Caption. Relationship among the SNR-related variables. The extreme
+Relationship among the SNR-related variables. The extreme
 object that would later produce the logistic regression's strongest
 error already appears outside the group's usual pattern.
 
