@@ -98,7 +98,7 @@ params:
 
 services:
   googleAnalytics:
-    ID: ""
+    ID: "G-R3KWR2LNMF"
 
 markup:
   goldmark:
