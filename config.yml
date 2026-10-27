@@ -1,0 +1,26 @@
+# Antonio V. Franco x Huyawo V8
+# Hugo serving: homepage, /blog/ and section shells; everything else is static.
+baseURL: "https://antoniovfranco.com/"
+languageCode: en
+title: "Antonio V. Franco"
+
+enableRobotsTXT: true
+
+# No taxonomy/term orphan pages; no content sections beyond the /blog/ shell.
+disableKinds:
+  - taxonomy
+  - term
+
+params:
+  env: production
+  author: "Antonio V. Franco"
+  description: "Antonio V. Franco, founder of the Huyawo ecosystem (Huyawo Solutions, Huyawo Research). AI engineering on efficient models, quantization, distillation and evaluation — built on evidence."
+
+services:
+  googleAnalytics:
+    ID: "G-R3KWR2LNMF"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

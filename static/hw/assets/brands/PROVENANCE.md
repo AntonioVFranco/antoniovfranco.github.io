@@ -1,0 +1,1 @@
+Vector marks sourced from Simple Icons project (simple-icons/simple-icons), fetched from original vendor vector descriptions via GitHub. Logos and trademarks remain the property of their respective owners. Not partnership badges. For final production, verify approved white/light lockups through each vendor’s official brand kit. No synthetic brand logos.

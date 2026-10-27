@@ -1,0 +1,5 @@
+# Public lead form: authentication happens inside the function via Turnstile,
+# strict origin/hostname allowlist, request validation, and DB-backed rate limiting.
+# IMPORTANT: this endpoint is public by design. Do NOT mistake CORS for authentication.
+[functions.lead-intake]
+verify_jwt = false
