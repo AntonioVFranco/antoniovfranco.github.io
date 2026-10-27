@@ -1,26 +1,19 @@
-# Antonio V. Franco x Huyawo V8
-# Hugo serving: homepage, /blog/ and section shells; everything else is static.
+# Antonio V. Franco x Huyawo V10_2 — site estatico completo.
+# Toda a saida (home, blog, artigos, 11 idiomas) e servida a partir de static/.
+# Hugo apenas copia static/ -> public/: nenhuma pagina e gerada por template,
+# evitando duplicar o GA4 e preservando o output aprovado byte a byte.
 baseURL: "https://antoniovfranco.com/"
 languageCode: en
 title: "Antonio V. Franco"
 
-enableRobotsTXT: true
-
-# No taxonomy/term orphan pages; no content sections beyond the /blog/ shell.
+# Nenhuma geracao de pagina; so copia de arquivos estaticos.
 disableKinds:
+  - home
+  - page
+  - section
   - taxonomy
   - term
-
-params:
-  env: production
-  author: "Antonio V. Franco"
-  description: "Antonio V. Franco, founder of the Huyawo ecosystem (Huyawo Solutions, Huyawo Research). AI engineering on efficient models, quantization, distillation and evaluation — built on evidence."
-
-services:
-  googleAnalytics:
-    ID: "G-R3KWR2LNMF"
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+  - RSS
+  - sitemap
+  - robotsTXT
+  - "404"

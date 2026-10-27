@@ -183,3 +183,32 @@ html[dir="rtl"] .hw-brand-official{object-position:center right}
 html[dir="rtl"] .hw-language-list{text-align:right}
 
 html[dir="rtl"] .hw-language-list{left:auto;right:-18px}
+
+/* V10 article and consent additions only. */
+.hw-article-lead-card{margin:42px 0 50px;border-radius:16px}
+.hw-article-lead-card h3{margin-top:0}
+.hw-article-lead-card .hw-leadform{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+.hw-article-lead-card .hw-leadform>label:first-child{display:flex;flex-direction:column;gap:6px;color:#fff;font-weight:700;font-size:13px}
+.hw-article-lead-card input[type=email]{height:50px;padding:0 16px;border-radius:9px;border:1px solid #d8e2ed;background:#fff;color:#111;max-width:480px;width:100%;font:inherit}
+.hw-article-lead-card .hw-article-consent{display:flex;align-items:flex-start;gap:10px;color:#fff;font-size:12px;line-height:1.5}
+.hw-article-lead-card .hw-article-consent input{margin-top:3px;accent-color:#fff}
+.hw-article-lead-card button{align-self:flex-start;border-radius:999px}
+.hw-article-lead-card .hw-formstatus,.hw-article-lead-card small{color:#fff}
+.hw-article-body a{color:#0070FC;text-decoration:underline;text-underline-offset:3px}
+.hw-article-body .hw-article-lead-card a{color:#fff}
+.hw-article-body blockquote{border-inline-start:3px solid #0070FC;padding-inline-start:18px;margin-inline:0;color:#30343b}
+.hw-article-aside .hw-aside-sticky>a{line-height:1.45}
+.hw-analytics-consent{position:fixed;right:20px;bottom:150px;z-index:10000;width:min(390px,calc(100vw - 32px));background:#fff;color:#111;border:1px solid #dce4eb;border-radius:16px;padding:22px;box-shadow:0 14px 46px #1115;font:14px/1.5 'DM Sans',sans-serif}
+.hw-analytics-consent strong{font-size:17px;color:#111}
+.hw-analytics-consent p{margin:8px 0 16px;color:#30343b}
+.hw-analytics-consent>div{display:flex;gap:10px;flex-wrap:wrap}
+.hw-analytics-consent button,.hw-analytics-reset{border-radius:999px;padding:10px 18px;font:700 13px 'DM Sans',sans-serif;cursor:pointer}
+.hw-analytics-allow{background:#0070FC;color:#fff;border:1px solid #0070FC}
+.hw-analytics-decline,.hw-analytics-reset{background:#fff;color:#17212f;border:1px solid #a9b7c7}
+.hw-analytics-reset{margin-top:16px}
+@media(max-width:720px){.hw-analytics-consent{left:16px;right:16px;bottom:115px;width:auto;padding:17px}}
+
+body[data-published-article="true"] .hw-article-cover{height:auto;aspect-ratio:1672 / 941}
+
+/* V10 article CTA button: readable against the blue card. */
+.hw-app .hw-article-lead-card button.hw-btn-blue,.hw-app .hw-article-lead-card button.hw-btn-blue:hover,.hw-app .hw-article-lead-card button.hw-btn-blue:focus-visible{background:#fff!important;color:#000!important;border:1px solid #fff!important;border-radius:999px!important}
