@@ -11,7 +11,7 @@ const allowedHostnames = new Set(['antoniovfranco.com', 'www.antoniovfranco.com'
 const jsonHeaders = { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff', 'referrer-policy': 'no-referrer' };
 const sources = new Set(['bottom_bar', 'assessment', 'hero', 'contact']);
 const topics = new Set(['general', 'quantization', 'distillation', 'finetuning', 'agents', 'benchmarks']);
-const locales = new Set(['en','pt','es','zh']);
+const locales = new Set(['en','pt','es','zh','ar','ru','it','fr','de','ja','ko']);
 
 type Payload = Record<string, unknown>;
 const env = (name: string) => Deno.env.get(name)?.trim() ?? '';

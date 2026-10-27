@@ -9,7 +9,7 @@ if(!reduced&&'IntersectionObserver' in window){
 const form=document.getElementById('contact-mail-form');
 form?.addEventListener('submit',async e=>{e.preventDefault();if(!form.reportValidity())return;
  const status=form.querySelector('.hw-formstatus'),button=form.querySelector('[type="submit"]');
- const lang=document.documentElement.lang.split('-')[0],messages={en:['Secure delivery is not active yet.','Message received.','Delivery failed. Please try again.'],pt:['O envio seguro ainda não está ativo.','Mensagem recebida.','Falha no envio. Tente novamente.'],es:['El envío seguro aún no está activo.','Mensaje recibido.','Error de envío. Inténtalo de nuevo.'],zh:['安全发送功能尚未启用。','已收到消息。','发送失败，请重试。']}[lang]||['Secure delivery is not active yet.','Message received.','Delivery failed. Please try again.'];
+ const lang=document.documentElement.lang.split('-')[0],messages={en:['Secure delivery is not active yet.','Message received.','Delivery failed. Please try again.'],pt:['O envio seguro ainda não está ativo.','Mensagem recebida.','Falha no envio. Tente novamente.'],es:['El envío seguro aún no está activo.','Mensaje recibido.','Error de envío. Inténtalo de nuevo.'],zh:['安全发送功能尚未启用。','已收到消息。','发送失败，请重试。']}[lang]||window.HW_STATUS?.[lang]?.slice(4,7)||['Secure delivery is not active yet.','Message received.','Delivery failed. Please try again.'];
  const config=window.HUYAWO_LEADS||{};
  if(location.protocol==='file:'||!/^https:\/\/[a-z0-9-]+\.supabase\.co\/functions\/v1\/lead-intake$/.test(config.functionUrl||'')||!config.turnstileSiteKey){status.textContent=messages[0];return;}
  button.disabled=true;status.textContent='';

@@ -169,3 +169,17 @@ body[data-page="article"] .hw-header,.post-page .hw-header{position:relative!imp
 /* Readable text wherever the brand blue fills a panel. */
 .hw-service-art :is(span,p),.hw-shansu-window :is(span,p),.hw-quiz-art :is(h2,h3,p,span),.hw-contact-section :is(h2,p),.hw-inline-cta :is(h3,p),.hw-contact-note :is(h2,h3,p,span){color:#fff!important}
 .hw-native-article-cta .hw-btn-blue,.hw-inline-cta .hw-btn-blue{background:#fff!important;color:#17212f!important}
+
+html[dir="rtl"] body{direction:rtl}
+html[dir="rtl"] .hw-header-inner,html[dir="rtl"] .hw-footer-top,html[dir="rtl"] .hw-article-columns{direction:rtl}
+html[dir="rtl"] input[type="email"],html[dir="rtl"] input[type="url"]{direction:ltr;text-align:right}
+html[dir="rtl"] .hw-brand-official{object-position:center right}
+html[dir="rtl"] .hw-language-list{text-align:right}
+
+html[dir="rtl"] body{direction:rtl}
+html[dir="rtl"] .hw-header-inner,html[dir="rtl"] .hw-footer-top,html[dir="rtl"] .hw-article-columns{direction:rtl}
+html[dir="rtl"] input[type="email"],html[dir="rtl"] input[type="url"]{direction:ltr;text-align:right}
+html[dir="rtl"] .hw-brand-official{object-position:center right}
+html[dir="rtl"] .hw-language-list{text-align:right}
+
+html[dir="rtl"] .hw-language-list{left:auto;right:-18px}
