@@ -2,3 +2,6 @@
 /public/
 /resources/_gen/
 .hugo_build.lock
+
+# Supabase CLI local link state (never commit)
+supabase/.temp/
