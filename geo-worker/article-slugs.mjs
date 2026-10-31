@@ -115,5 +115,18 @@ export const articleSlugs = {
     "de": "wann-ist-ein-ki-experiment-aussagekraftig",
     "ja": "ai実験はいつ根拠になるのか",
     "ko": "ai-실험은-언제-근거가-될까"
+  },
+  "slm-catalog-enrichment": {
+    "en": "slm-fine-tuning-marketplace-catalog-enrichment-costs",
+    "pt": "fine-tuning-slms-custo-enriquecimento-catalogos-marketplaces",
+    "es": "fine-tuning-slm-coste-enriquecimiento-catalogos-marketplaces",
+    "zh": "slm-微调-电商平台-商品目录-成本",
+    "ar": "الضبط-الدقيق-slm-تكلفة-كتالوجات-الأسواق-الإلكترونية",
+    "ru": "дообучение-slm-стоимость-обогащения-каталогов",
+    "it": "fine-tuning-slm-costo-arricchimento-cataloghi-marketplace",
+    "fr": "fine-tuning-slm-cout-enrichissement-catalogues-marketplaces",
+    "de": "slm-fine-tuning-kosten-kataloganreicherung-marktplaetze",
+    "ja": "slm-ファインチューニング-商品カタログ-コスト",
+    "ko": "slm-파인튜닝-상품-카탈로그-비용"
   }
 };
