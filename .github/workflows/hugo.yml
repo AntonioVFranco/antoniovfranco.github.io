@@ -1,4 +1,4 @@
-# Deploy do site estatico Antonio V. Franco x Huyawo V10_2 para GitHub Pages.
+# Deploy Antonio V. Franco x Huyawo v13 to GitHub Pages.
 # O site e 100% estatico (build final aprovado em static/); publicacao direta.
 name: Deploy site to Pages
 
@@ -30,6 +30,20 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Setup Python for SEO validation
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install SEO validation dependency
+        run: python -m pip install -r scripts/requirements-seo.txt
+
+      - name: Validate SEO and localized routes
+        run: python scripts/validate-seo.py
+
+      - name: Test existing geographic routing
+        run: node --test geo-worker/index.test.mjs
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3

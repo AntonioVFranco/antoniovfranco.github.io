@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": 21704,
+  "html_pages": 117,
+  "canonical_pages": 110,
+  "article_pages": 33,
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "zh"
+  ],
+  "baseline_comparison": false,
+  "errors": []
+}

@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-01",
+  "status": "PASS",
+  "scope": "20 desktop browser samples at the same viewport, source versus v13",
+  "method": "Compare visible main text and element offsetTop, offsetLeft, offsetWidth, offsetHeight; existing animations are excluded from layout coordinates.",
+  "cases": [
+    {
+      "route": "en/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "pt/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "es/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "zh/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "ar/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "ru/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "it/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "fr/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "de/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "ja/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "ko/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 33
+    },
+    {
+      "route": "privacy/pt/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 7
+    },
+    {
+      "route": "about/fr/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 11
+    },
+    {
+      "route": "contact/de/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 4
+    },
+    {
+      "route": "blog/ko/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 9
+    },
+    {
+      "route": "open-source/es/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 11
+    },
+    {
+      "route": "research/it/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 11
+    },
+    {
+      "route": "articles/slm-微调-电商平台-商品目录-成本/zh/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 13
+    },
+    {
+      "route": "articles/وكيل-أصغر-نموذج-أكبر-الضبط-الدقيق-الوكيلي/ar/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 13
+    },
+    {
+      "route": "articles/n8n-3-0-が-langgraph-に置き換われない理由/ja/",
+      "visible_main_text_identical": true,
+      "layout_offsets_and_dimensions_identical": true,
+      "elements_compared": 15
+    }
+  ],
+  "limitations": [
+    "No mobile browser viewport was available in the UI control surface. CSS, responsive breakpoints and all image bytes remain unchanged.",
+    "A browser sample does not establish production Core Web Vitals or indexing."
+  ]
+}

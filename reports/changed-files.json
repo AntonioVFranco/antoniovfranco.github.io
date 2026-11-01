@@ -1,0 +1,586 @@
+[
+  {
+    "path": ".github/workflows/hugo.yml",
+    "change": "modified"
+  },
+  {
+    "path": "HERMES-HANDOFF.md",
+    "change": "added"
+  },
+  {
+    "path": "README-V13.md",
+    "change": "added"
+  },
+  {
+    "path": "reports/SEO-GEO-AUDIT.md",
+    "change": "added"
+  },
+  {
+    "path": "reports/seo-inventory.json",
+    "change": "added"
+  },
+  {
+    "path": "reports/ui-validation.json",
+    "change": "added"
+  },
+  {
+    "path": "reports/validation.json",
+    "change": "added"
+  },
+  {
+    "path": "scripts/optimize-seo.py",
+    "change": "added"
+  },
+  {
+    "path": "scripts/requirements-seo.txt",
+    "change": "added"
+  },
+  {
+    "path": "scripts/seo-data.cjs",
+    "change": "added"
+  },
+  {
+    "path": "scripts/validate-seo.py",
+    "change": "added"
+  },
+  {
+    "path": "static/.nojekyll",
+    "change": "added"
+  },
+  {
+    "path": "static/about/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/about/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/agent-plus-petit-grand-modele-fine-tuning-agentique/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/agente-menor-modelo-maior-fine-tuning-agentico/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/agente-pequeno-modelo-grande-fine-tuning-agentico/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/agente-piccolo-modello-grande-fine-tuning-agentico/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/fine-tuning-slm-coste-enriquecimiento-catalogos-marketplaces/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/fine-tuning-slm-costo-arricchimento-cataloghi-marketplace/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/fine-tuning-slm-cout-enrichissement-catalogues-marketplaces/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/fine-tuning-slms-custo-enriquecimento-catalogos-marketplaces/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/kleinerer-agent-groesseres-modell-agentisches-fine-tuning/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/n8n-3-0-が-langgraph-に置き換われない理由/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/n8n-3-0이-langgraph를-대체하지-못하는-이유/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/perche-n8n-3-0-non-sostituisce-langgraph/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/por-que-n8n-3-0-ainda-nao-substitui-langgraph/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/por-que-n8n-3-0-aun-no-sustituye-langgraph/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/pourquoi-n8n-3-0-ne-remplace-pas-langgraph/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/slm-fine-tuning-kosten-kataloganreicherung-marktplaetze/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/slm-fine-tuning-marketplace-catalog-enrichment-costs/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/slm-ファインチューニング-商品カタログ-コスト/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/slm-微调-电商平台-商品目录-成本/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/slm-파인튜닝-상품-카탈로그-비용/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/smaller-agent-larger-model-agentic-fine-tuning/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/warum-n8n-3-0-langgraph-nicht-ersetzt/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/why-n8n-3-0-still-does-not-replace-langgraph/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/дообучение-slm-стоимость-обогащения-каталогов/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/небольшой-агент-крупная-модель-агентное-дообучение/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/почему-n8n-3-0-не-заменяет-langgraph/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/الضبط-الدقيق-slm-تكلفة-كتالوجات-الأسواق-الإلكترونية/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/لماذا-لا-يستبدل-n8n-3-0-langgraph/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/وكيل-أصغر-نموذج-أكبر-الضبط-الدقيق-الوكيلي/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/为什么-n8n-3-0-仍不能取代-langgraph/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/小さなエージェントと大きなモデル-ファインチューニング/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/小型智能体与大型模型-智能体微调/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/articles/작은-에이전트와-큰-모델-파인튜닝/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/ar/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/de/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/en/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/es/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/fr/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/index.xml",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/it/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/ja/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/ko/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/pt/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/ru/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/blog/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/blog/zh/index.xml",
+    "change": "added"
+  },
+  {
+    "path": "static/contact/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/contact/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/hw/js/site.js",
+    "change": "modified"
+  },
+  {
+    "path": "static/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/index.xml",
+    "change": "modified"
+  },
+  {
+    "path": "static/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/llms.txt",
+    "change": "added"
+  },
+  {
+    "path": "static/open-source/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/open-source/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/privacy/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/ar/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/de/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/en/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/es/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/fr/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/it/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/ja/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/ko/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/pt/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/research/zh/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/robots.txt",
+    "change": "modified"
+  },
+  {
+    "path": "static/ru/index.html",
+    "change": "modified"
+  },
+  {
+    "path": "static/sitemap.xml",
+    "change": "modified"
+  },
+  {
+    "path": "static/zh/index.html",
+    "change": "modified"
+  }
+]
