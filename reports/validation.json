@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "checks": 21704,
-  "html_pages": 117,
-  "canonical_pages": 110,
-  "article_pages": 33,
+  "checks": 23933,
+  "html_pages": 128,
+  "canonical_pages": 121,
+  "article_pages": 44,
   "languages": [
     "ar",
     "de",

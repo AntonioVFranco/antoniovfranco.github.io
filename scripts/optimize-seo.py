@@ -50,6 +50,7 @@ SHORT_TITLES = {
   'Fine-tuning agentico: piccoli modelli e costi IA', 'Fine-tuning agentique : petits modèles et coûts IA',
   'Agentisches Fine-Tuning: kleine Modelle und KI-Kosten', 'エージェント型ファインチューニング：小型モデルと AI コスト',
   '에이전트 파인튜닝: 소형 모델과 AI 비용']))}
+SHORT_TITLES['openclaw-saas-costs'] = {'en': 'OpenClaw and Open Source: SaaS Replacement Costs', 'pt': 'OpenClaw e open source: quanto custa substituir SaaS?', 'es': 'OpenClaw y código abierto: costes de sustituir SaaS', 'zh': 'OpenClaw 与开源软件：替代 SaaS 的成本', 'ar': 'OpenClaw والبرمجيات المفتوحة: تكلفة استبدال SaaS', 'ru': 'OpenClaw и открытый код: стоимость замены SaaS', 'it': 'OpenClaw e open source: costi per sostituire SaaS', 'fr': 'OpenClaw et open source : coût du remplacement SaaS', 'de': 'OpenClaw und Open Source: Kosten für den SaaS-Ersatz', 'ja': 'OpenClaw とオープンソース：SaaS の置き換え費用', 'ko': 'OpenClaw와 오픈 소스: SaaS 대체 비용'}
 HOME_TITLES = dict(zip(LANGS, [
  'AI Engineering & Efficient Models', 'Engenharia de IA e modelos eficientes',
  'Ingeniería de IA y modelos eficientes', 'AI 工程与高效模型', 'هندسة الذكاء الاصطناعي والنماذج الكفؤة',
@@ -59,6 +60,8 @@ HOME_TITLES = dict(zip(LANGS, [
 TOPICS = {'slm-catalog-enrichment': ['Small language models', 'Fine-tuning', 'Product attribute extraction', 'Model economics'],
  'n8n-langgraph': ['AI agents', 'n8n', 'LangGraph', 'Durable execution'],
  'agentic-finetuning': ['Agentic fine-tuning', 'Small language models', 'LoRA', 'Reinforcement learning']}
+
+TOPICS['openclaw-saas-costs'] = ['OpenClaw', 'Open-source software', 'SaaS costs', 'AI agents', 'Model economics']
 
 def cls(name):
     return 'contains(concat(" ",normalize-space(@class)," ")," ' + name + ' ")'
@@ -394,14 +397,14 @@ for record in records:
     item = ET.SubElement(site_map, '{' + NS + '}url')
     ET.SubElement(item, '{' + NS + '}loc').text = record['url']
     # This release changes served HTML, not the article's editorial date.
-    ET.SubElement(item, '{' + NS + '}lastmod').text = '2026-11-01'
+    ET.SubElement(item, '{' + NS + '}lastmod').text = '2026-11-02'
     for l, alternate in {**record['alternates'], 'x-default': record['alternates']['en']}.items():
         ET.SubElement(item, '{' + XH + '}link', rel='alternate', hreflang=l, href=alternate)
 ET.ElementTree(site_map).write(STATIC/'sitemap.xml', encoding='utf-8', xml_declaration=True)
 (STATIC/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: ' + BASE + '/sitemap.xml\n', encoding='utf-8')
 (STATIC/'.nojekyll').touch()
 
-# Every language gets a feed containing all three published articles. The
+# Every language gets a feed containing all published articles. The
 # undated first article stays undated; never invent its publication date.
 ATOM = 'http://www.w3.org/2005/Atom'
 ET.register_namespace('atom', ATOM)

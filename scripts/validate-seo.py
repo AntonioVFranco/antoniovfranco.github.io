@@ -147,10 +147,10 @@ for p in STATIC.rglob('index.html'):
                 q = q/'index.html'
         check(q.is_file(),rel+': broken local '+attr+' '+value)
 
-check(len(docs)==117,'117 approved HTML documents')
-check(len(localized)==110,'110 canonical translated pages')
-check(len(articles)==33,'33 article translations')
-check(all(v==3 for v in Counter(l for _,l in articles).values()),'three articles per language')
+check(len(docs)==128,'128 approved HTML documents')
+check(len(localized)==121,'121 canonical translated pages')
+check(len(articles)==44,'44 article translations')
+check(all(v==4 for v in Counter(l for _,l in articles).values()),'four articles per language')
 check(set(l for _,l in articles)==LANGS,'all article languages')
 for lang in LANGS:
     rows = [r for r in localized if r[1]==lang]
@@ -158,7 +158,7 @@ for lang in LANGS:
     check(len(set(r[4] for r in rows))==len(rows),'unique titles in '+lang)
     feed = ET.parse(STATIC/'blog'/lang/'index.xml')
     entries = feed.findall('channel/item')
-    check(len(entries)==3,'all articles in '+lang+' feed')
+    check(len(entries)==4,'all articles in '+lang+' feed')
     for item in entries:
         check(target(item.findtext('link')).is_file(),'feed target '+lang)
 ns = {'s':'http://www.sitemaps.org/schemas/sitemap/0.9','x':'http://www.w3.org/1999/xhtml'}
@@ -166,7 +166,7 @@ sm = ET.parse(STATIC/'sitemap.xml')
 urls = sm.findall('s:url',ns)
 locs = [n.findtext('s:loc',namespaces=ns) for n in urls]
 check(set(locs)=={r[0] for r in localized},'sitemap contains exactly canonical URLs')
-check(len(locs)==len(set(locs))==110,'no sitemap duplicates')
+check(len(locs)==len(set(locs))==121,'no sitemap duplicates')
 for node in urls:
     links = {e.get('hreflang'):e.get('href') for e in node.findall('x:link',ns)}
     check(set(links)==LANGS|{'x-default'},'sitemap language cluster')

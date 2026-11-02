@@ -286,6 +286,72 @@
     "datePublished": null
   },
   {
+    "path": "articles/OpenClaw-オープンソース-SaaS-置き換え費用/ja/index.html",
+    "url": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+    "lang": "ja",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw とオープンソース：SaaS の置き換え費用 | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
+  },
+  {
+    "path": "articles/OpenClaw-开源软件替代SaaS的成本/zh/index.html",
+    "url": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+    "lang": "zh",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw 与开源软件：替代 SaaS 的成本 | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
+  },
+  {
+    "path": "articles/OpenClaw-오픈소스-SaaS-대체-비용/ko/index.html",
+    "url": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/",
+    "lang": "ko",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw와 오픈 소스: SaaS 대체 비용 | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
+  },
+  {
     "path": "articles/agent-plus-petit-grand-modele-fine-tuning-agentique/fr/index.html",
     "url": "https://antoniovfranco.com/articles/agent-plus-petit-grand-modele-fine-tuning-agentique/fr/",
     "lang": "fr",
@@ -372,6 +438,72 @@
       "ko": "https://antoniovfranco.com/articles/%EC%9E%91%EC%9D%80-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%99%80-%ED%81%B0-%EB%AA%A8%EB%8D%B8-%ED%8C%8C%EC%9D%B8%ED%8A%9C%EB%8B%9D/ko/"
     },
     "datePublished": null
+  },
+  {
+    "path": "articles/costi-sostituire-saas-openclaw-open-source/it/index.html",
+    "url": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+    "lang": "it",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw e open source: costi per sostituire SaaS | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
+  },
+  {
+    "path": "articles/cout-remplacer-saas-openclaw-open-source/fr/index.html",
+    "url": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+    "lang": "fr",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw et open source : coût du remplacement SaaS | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
+  },
+  {
+    "path": "articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/index.html",
+    "url": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+    "lang": "es",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw y código abierto: costes de sustituir SaaS | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
   },
   {
     "path": "articles/fine-tuning-slm-coste-enriquecimiento-catalogos-marketplaces/es/index.html",
@@ -484,6 +616,28 @@
     "datePublished": null
   },
   {
+    "path": "articles/kosten-saas-ersetzen-openclaw-open-source/de/index.html",
+    "url": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+    "lang": "de",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw und Open Source: Kosten für den SaaS-Ersatz | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
+  },
+  {
     "path": "articles/n8n-3-0-が-langgraph-に置き換われない理由/ja/index.html",
     "url": "https://antoniovfranco.com/articles/n8n-3-0-%E3%81%8C-langgraph-%E3%81%AB%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%82%8F%E3%82%8C%E3%81%AA%E3%81%84%E7%90%86%E7%94%B1/ja/",
     "lang": "ja",
@@ -526,6 +680,28 @@
       "ko": "https://antoniovfranco.com/articles/n8n-3-0%EC%9D%B4-langgraph%EB%A5%BC-%EB%8C%80%EC%B2%B4%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/ko/"
     },
     "datePublished": "2026-10-29T09:00:00-03:00"
+  },
+  {
+    "path": "articles/openclaw-open-source-saas-replacement-costs/en/index.html",
+    "url": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+    "lang": "en",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw and Open Source: SaaS Replacement Costs | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
   },
   {
     "path": "articles/perche-n8n-3-0-non-sostituisce-langgraph/it/index.html",
@@ -614,6 +790,28 @@
       "ko": "https://antoniovfranco.com/articles/n8n-3-0%EC%9D%B4-langgraph%EB%A5%BC-%EB%8C%80%EC%B2%B4%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0/ko/"
     },
     "datePublished": "2026-10-29T09:00:00-03:00"
+  },
+  {
+    "path": "articles/quanto-custa-substituir-saas-openclaw-open-source/pt/index.html",
+    "url": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+    "lang": "pt",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw e open source: quanto custa substituir SaaS? | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
   },
   {
     "path": "articles/slm-fine-tuning-kosten-kataloganreicherung-marktplaetze/de/index.html",
@@ -748,6 +946,28 @@
     "datePublished": null
   },
   {
+    "path": "articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/index.html",
+    "url": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+    "lang": "ru",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw и открытый код: стоимость замены SaaS | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
+  },
+  {
     "path": "articles/warum-n8n-3-0-langgraph-nicht-ersetzt/de/index.html",
     "url": "https://antoniovfranco.com/articles/warum-n8n-3-0-langgraph-nicht-ersetzt/de/",
     "lang": "de",
@@ -878,6 +1098,28 @@
       "ko": "https://antoniovfranco.com/articles/slm-%ED%8C%8C%EC%9D%B8%ED%8A%9C%EB%8B%9D-%EC%83%81%ED%92%88-%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8-%EB%B9%84%EC%9A%A9/ko/"
     },
     "datePublished": "2026-10-31T09:00:00-03:00"
+  },
+  {
+    "path": "articles/تكلفة-استبدال-saas-بأوبن-كلاو-والبرمجيات-المفتوحة/ar/index.html",
+    "url": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+    "lang": "ar",
+    "article": "openclaw-saas-costs",
+    "localized": true,
+    "title": "OpenClaw والبرمجيات المفتوحة: تكلفة استبدال SaaS | Antonio V. Franco",
+    "alternates": {
+      "en": "https://antoniovfranco.com/articles/openclaw-open-source-saas-replacement-costs/en/",
+      "pt": "https://antoniovfranco.com/articles/quanto-custa-substituir-saas-openclaw-open-source/pt/",
+      "es": "https://antoniovfranco.com/articles/cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto/es/",
+      "zh": "https://antoniovfranco.com/articles/OpenClaw-%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E6%9B%BF%E4%BB%A3SaaS%E7%9A%84%E6%88%90%E6%9C%AC/zh/",
+      "ar": "https://antoniovfranco.com/articles/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-saas-%D8%A8%D8%A3%D9%88%D8%A8%D9%86-%D9%83%D9%84%D8%A7%D9%88-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9/ar/",
+      "ru": "https://antoniovfranco.com/articles/stoimost-zameny-saas-openclaw-otkrytyj-kod/ru/",
+      "it": "https://antoniovfranco.com/articles/costi-sostituire-saas-openclaw-open-source/it/",
+      "fr": "https://antoniovfranco.com/articles/cout-remplacer-saas-openclaw-open-source/fr/",
+      "de": "https://antoniovfranco.com/articles/kosten-saas-ersetzen-openclaw-open-source/de/",
+      "ja": "https://antoniovfranco.com/articles/OpenClaw-%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9-SaaS-%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%E8%B2%BB%E7%94%A8/ja/",
+      "ko": "https://antoniovfranco.com/articles/OpenClaw-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-SaaS-%EB%8C%80%EC%B2%B4-%EB%B9%84%EC%9A%A9/ko/"
+    },
+    "datePublished": "2026-11-02T09:00:00-03:00"
   },
   {
     "path": "articles/لماذا-لا-يستبدل-n8n-3-0-langgraph/ar/index.html",

@@ -128,5 +128,18 @@ export const articleSlugs = {
     "de": "slm-fine-tuning-kosten-kataloganreicherung-marktplaetze",
     "ja": "slm-ファインチューニング-商品カタログ-コスト",
     "ko": "slm-파인튜닝-상품-카탈로그-비용"
+  },
+  "openclaw-saas-costs": {
+    "en": "openclaw-open-source-saas-replacement-costs",
+    "pt": "quanto-custa-substituir-saas-openclaw-open-source",
+    "es": "cuanto-cuesta-sustituir-saas-openclaw-codigo-abierto",
+    "zh": "OpenClaw-开源软件替代SaaS的成本",
+    "ar": "تكلفة-استبدال-saas-بأوبن-كلاو-والبرمجيات-المفتوحة",
+    "ru": "stoimost-zameny-saas-openclaw-otkrytyj-kod",
+    "it": "costi-sostituire-saas-openclaw-open-source",
+    "fr": "cout-remplacer-saas-openclaw-open-source",
+    "de": "kosten-saas-ersetzen-openclaw-open-source",
+    "ja": "OpenClaw-オープンソース-SaaS-置き換え費用",
+    "ko": "OpenClaw-오픈소스-SaaS-대체-비용"
   }
 };
