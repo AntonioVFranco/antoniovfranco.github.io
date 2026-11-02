@@ -212,3 +212,6 @@ body[data-published-article="true"] .hw-article-cover{height:auto;aspect-ratio:1
 
 /* V10 article CTA button: readable against the blue card. */
 .hw-app .hw-article-lead-card button.hw-btn-blue,.hw-app .hw-article-lead-card button.hw-btn-blue:hover,.hw-app .hw-article-lead-card button.hw-btn-blue:focus-visible{background:#fff!important;color:#000!important;border:1px solid #fff!important;border-radius:999px!important}
+
+/* Keep long translated words within the available content width. */
+.hw-main{overflow-wrap:anywhere}
